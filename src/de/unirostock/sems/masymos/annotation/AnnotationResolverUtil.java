@@ -48,7 +48,12 @@ public class AnnotationResolverUtil {
 		Manager.instance().getDatabase();
 		urlCount= new AtomicLong(0);
 		link = new MiriamLink();
+		
 		link.setAddress("http://www.ebi.ac.uk/miriamws/main/MiriamWebServices");
+
+//		String[] webadress = null;
+//		webadress = link.getLocations("urn:miriam:pubmed:11429446");
+//		System.out.println("######################## "+webadress[0]);
 	}
 	
 	public MiriamLink getMiriamLink() {

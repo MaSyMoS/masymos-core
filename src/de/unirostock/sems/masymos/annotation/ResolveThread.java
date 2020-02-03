@@ -1,8 +1,7 @@
 package de.unirostock.sems.masymos.annotation;
 
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import uk.ac.ebi.miriam.lib.MiriamLink;
 
@@ -14,7 +13,7 @@ import uk.ac.ebi.miriam.lib.MiriamLink;
 */
 public class ResolveThread extends Thread {
 	
-	final Logger logger = LoggerFactory.getLogger(ResolveThread.class);
+	final Logger logger = Logger.getLogger(ResolveThread.class);
 
 	private String uri;
 	private long number;
@@ -42,7 +41,7 @@ public class ResolveThread extends Thread {
 			}
 			res = link.getLocations(uri); 
 		} catch (Exception e1) {
-			logger.error(e1.getMessage());
+			logger.error("Error using Miriam library"+e1.getMessage(),e1);
 		}
 		if ((res == null) || (res.length == 0)) {
 			logger.info("Miriam request #" + number +" returned no results for " + uri);
