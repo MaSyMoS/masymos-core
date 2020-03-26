@@ -30,7 +30,9 @@ All notable changes to this project will be documented in this file.
 - Code clean up
 
 ## 0.9.1 - 2016-07-21
-- TODO @henkelr
+- adapted to Neo4J 3.01
+- model exchange formats SBML, CellML, SED-ML can be stored and indexed
+- ontologies KISAO, SBO, GO, Chebi can be stored ad indexed
 
 
 # About this changelog
