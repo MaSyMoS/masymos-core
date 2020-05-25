@@ -7,8 +7,7 @@ import javax.xml.stream.XMLStreamException;
 
 import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Transaction;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import de.unirostock.sems.masymos.extractor.Extractor;
 
@@ -21,7 +20,7 @@ import de.unirostock.sems.masymos.extractor.Extractor;
 
 public class XMLExtractor extends Extractor{
 
-	final static Logger logger = LoggerFactory.getLogger(XMLExtractor.class);
+	final static Logger logger = Logger.getLogger(XMLExtractor.class);
 	
 	public static Node extractStoreIndex(InputStream stream, String versionID) throws XMLStreamException, IOException{
 		

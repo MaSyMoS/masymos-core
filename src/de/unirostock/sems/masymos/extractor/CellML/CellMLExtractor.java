@@ -19,8 +19,7 @@ import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Relationship;
 import org.neo4j.graphdb.RelationshipType;
 import org.neo4j.graphdb.Transaction;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import com.google.gson.Gson;
 
@@ -50,7 +49,7 @@ import de.unirostock.sems.masymos.util.IndexText;
 */
 public class CellMLExtractor extends Extractor{
 	
-	final static Logger logger = LoggerFactory.getLogger(CellMLExtractor.class);
+	final static Logger logger = Logger.getLogger(CellMLExtractor.class);
 	
 	public static Node extractStoreIndexCellML(String filePath, String versionID, Long uID) throws XMLStreamException, IOException{
 		Node documentNode = null;

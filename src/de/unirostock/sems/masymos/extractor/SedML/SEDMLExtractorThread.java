@@ -7,8 +7,7 @@ import java.net.URL;
 import java.util.concurrent.Callable;
 
 import org.neo4j.graphdb.Node;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import de.unirostock.sems.masymos.database.IdFactory;
 import de.unirostock.sems.masymos.extractor.Extractor;
@@ -23,7 +22,7 @@ import de.unirostock.sems.masymos.extractor.Extractor;
 
 public class SEDMLExtractorThread  implements Callable<Node> {
 	
-	final  Logger logger = LoggerFactory.getLogger(SEDMLExtractorThread.class);
+	final  Logger logger = Logger.getLogger(SEDMLExtractorThread.class);
 
 	private String filePath;
 	private String versionID;

@@ -15,8 +15,7 @@ import org.apache.lucene.search.Query;
 import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.index.Index;
 import org.neo4j.graphdb.index.IndexHits;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import de.unirostock.sems.masymos.analyzer.AnalyzerHandler;
 import de.unirostock.sems.masymos.configuration.NodeLabel;
@@ -36,7 +35,7 @@ import de.unirostock.sems.masymos.query.results.VersionResultSet;
 
 public class AnnotationQuery implements IQueryInterface {
 	
-	final Logger logger = LoggerFactory.getLogger(AnnotationQuery.class);
+	final Logger logger = Logger.getLogger(AnnotationQuery.class);
 	
 	private final Analyzer analyzer = AnalyzerHandler.getAnnotationindexanalyzer();
 	private final Index<Node> index = Manager.instance().getAnnotationIndex();

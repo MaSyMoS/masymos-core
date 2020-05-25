@@ -30,8 +30,7 @@ import org.jlibsedml.XMLException;
 import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Relationship;
 import org.neo4j.graphdb.Transaction;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import de.unirostock.sems.masymos.configuration.NodeLabel;
 import de.unirostock.sems.masymos.configuration.Property;
@@ -48,7 +47,7 @@ import de.unirostock.sems.masymos.extractor.Extractor;
 */
 public class SEDMLExtractor extends Extractor{
 	
-	final static Logger logger = LoggerFactory.getLogger(SEDMLExtractor.class);
+	final static Logger logger = Logger.getLogger(SEDMLExtractor.class);
 	
 
 	public static Node extractStoreIndexSEDML(File sedFile, String versionID, Long uID) throws XMLStreamException, IOException{

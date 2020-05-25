@@ -16,8 +16,7 @@ import org.neo4j.graphdb.Transaction;
 import org.neo4j.graphdb.index.Index;
 import org.neo4j.graphdb.index.IndexHits;
 import org.neo4j.index.lucene.ValueContext;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import de.unirostock.sems.masymos.configuration.NodeLabel;
 import de.unirostock.sems.masymos.configuration.Property;
@@ -31,7 +30,7 @@ import de.unirostock.sems.masymos.database.traverse.DocumentTraverser;
 */
 public class ModelDeleter {
 	
-	final static Logger logger = LoggerFactory.getLogger(ModelDeleter.class);
+	final static Logger logger = Logger.getLogger(ModelDeleter.class);
 	
 	private static GraphDatabaseService graphDB = Manager.instance().getDatabase();
 	private static Index<Node> nodeDeleteIndex = Manager.instance().getNodeDeleteIndex();

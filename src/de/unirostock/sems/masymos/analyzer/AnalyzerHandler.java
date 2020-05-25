@@ -9,8 +9,7 @@ import org.apache.lucene.analysis.core.KeywordAnalyzer;
 import org.apache.lucene.analysis.core.KeywordTokenizerFactory;
 import org.apache.lucene.analysis.core.LowerCaseFilterFactory;
 import org.apache.lucene.analysis.custom.CustomAnalyzer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 /**
 *
@@ -19,7 +18,7 @@ import org.slf4j.LoggerFactory;
 */
 public class AnalyzerHandler{
 	
-	final static Logger logger = LoggerFactory.getLogger(AnalyzerHandler.class);
+	final static Logger logger = Logger.getLogger(AnalyzerHandler.class);
 
 	private final static Analyzer lowerCaseKeywordAnalyzer =  createLowerCaseKeywordAnalyzer();
 	private final static Analyzer modelIndexAnalyzer = new ModelIndexAnalyzer();

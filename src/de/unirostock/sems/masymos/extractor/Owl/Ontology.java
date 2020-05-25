@@ -21,8 +21,7 @@ import org.semanticweb.owlapi.reasoner.NodeSet;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import de.unirostock.sems.masymos.database.Manager;
 import de.unirostock.sems.masymos.util.OntologyFactory;
@@ -35,7 +34,7 @@ import de.unirostock.sems.masymos.util.OntologyFactory;
 */
 public class Ontology {
 	
-	final static Logger logger = LoggerFactory.getLogger(Ontology.class);
+	final static Logger logger = Logger.getLogger(Ontology.class);
 	
 	public static void extractOntology(File file, String ontologyName){
 		

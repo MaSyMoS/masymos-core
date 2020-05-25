@@ -18,8 +18,7 @@ import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Transaction;
 import org.neo4j.graphdb.index.Index;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import de.unirostock.sems.masymos.configuration.Property;
 import de.unirostock.sems.masymos.database.Manager;
@@ -33,7 +32,7 @@ import de.unirostock.sems.masymos.util.IndexText;
 */
 public class FetchThread extends Thread {
 	
-	final Logger logger = LoggerFactory.getLogger(FetchThread.class);
+	final Logger logger = Logger.getLogger(FetchThread.class);
 
 	private String url;
 	private String uri;

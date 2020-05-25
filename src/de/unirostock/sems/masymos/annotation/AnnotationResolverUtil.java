@@ -10,8 +10,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Transaction;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import de.unirostock.sems.masymos.configuration.NodeLabel;
 import de.unirostock.sems.masymos.configuration.Property;
@@ -25,7 +24,7 @@ import uk.ac.ebi.miriam.lib.MiriamLink;
 * @author ronhenkel
 */
 public class AnnotationResolverUtil {
-	final Logger logger = LoggerFactory.getLogger(AnnotationResolverUtil.class);
+	final Logger logger = Logger.getLogger(AnnotationResolverUtil.class);
 	
 	private static AnnotationResolverUtil INSTANCE = null;
 	

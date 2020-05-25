@@ -16,8 +16,7 @@ import org.neo4j.graphdb.Transaction;
 import org.sbml.jsbml.Annotation;
 import org.sbml.jsbml.CVTerm;
 import org.sbml.jsbml.CVTerm.Qualifier;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 import org.sbml.jsbml.Compartment;
 import org.sbml.jsbml.Creator;
 import org.sbml.jsbml.Event;
@@ -57,7 +56,7 @@ import de.unirostock.sems.masymos.util.IndexText;
 
 public class SBMLExtractor extends Extractor{
 
-	final static Logger logger = LoggerFactory.getLogger(SBMLExtractor.class);
+	final static Logger logger = Logger.getLogger(SBMLExtractor.class);
 	
 	private static SBMLReader reader = new SBMLReader();
 
