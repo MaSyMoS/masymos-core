@@ -84,7 +84,6 @@ JavaEWAH-0.8.6.jar
 javax.inject-1.jar
 javax.ws.rs-api-2.0.jar
 jaxen-1.1.1.jar
-jcl-over-slf4j-1.7.7.jar
 jCOMODI-0.5.9.jar
 jdom-1.0.jar
 jdom-1.1.3.jar
@@ -158,7 +157,6 @@ sesame-rio-trig-2.7.12.jar
 sesame-rio-trix-2.7.12.jar
 sesame-rio-turtle-2.7.12.jar
 sesame-util-2.7.12.jar
-slf4j-log4j12-1.7.12.jar
 spi-0.2.4.jar
 stax2-api-3.1.4.jar
 staxmate-2.3.0.jar
