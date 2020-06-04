@@ -20,16 +20,16 @@ public class OntologyFactory {
 
 
 	static UniqueFactory<Node> SBOFactory;   
-	final static String indexSBO = "SBOOntology";
+	static final String indexSBO = "SBOOntology";
 
 	static UniqueFactory<Node> KISAOFactory;   
-	final static String indexKISAO = "KISAOOntology";
+	static final String indexKISAO = "KISAOOntology";
 
 	static UniqueFactory<Node> GOFactory;
-	final static String indexGO = "GOOntology";
+	static final String indexGO = "GOOntology";
 
 	static UniqueFactory<Node> ChebiFactory;
-	final static String indexChebi = "ChebiOntology";
+	static final String indexChebi = "ChebiOntology";
 
 	static Map<String, UniqueFactory<Node>> factoryMap = new HashMap<>();
 

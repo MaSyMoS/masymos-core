@@ -23,7 +23,7 @@ import de.unirostock.sems.masymos.database.Manager;
 */
 public class DocumentTraverser {
 
-	final static Logger logger = Logger.getLogger(DocumentTraverser.class);
+	static final Logger logger = Logger.getLogger(DocumentTraverser.class);
 	private static GraphDatabaseService graphDB = Manager.instance().getDatabase();
 
 	public static Node getDocumentByUID(Long uID) {

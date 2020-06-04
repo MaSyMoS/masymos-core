@@ -47,7 +47,7 @@ import de.unirostock.sems.masymos.extractor.Extractor;
 */
 public class SEDMLExtractor extends Extractor{
 	
-	final static Logger logger = Logger.getLogger(SEDMLExtractor.class);
+	static final Logger logger = Logger.getLogger(SEDMLExtractor.class);
 	
 
 	public static Node extractStoreIndexSEDML(File sedFile, String versionID, Long uID) throws XMLStreamException, IOException{

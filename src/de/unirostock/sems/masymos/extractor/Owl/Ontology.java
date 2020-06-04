@@ -34,7 +34,7 @@ import de.unirostock.sems.masymos.util.OntologyFactory;
 */
 public class Ontology {
 	
-	final static Logger logger = Logger.getLogger(Ontology.class);
+	static final Logger logger = Logger.getLogger(Ontology.class);
 	
 	public static void extractOntology(File file, String ontologyName){
 		

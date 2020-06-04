@@ -20,7 +20,7 @@ import de.unirostock.sems.masymos.extractor.Extractor;
 
 public class XMLExtractor extends Extractor{
 
-	final static Logger logger = Logger.getLogger(XMLExtractor.class);
+	static final Logger logger = Logger.getLogger(XMLExtractor.class);
 	
 	public static Node extractStoreIndex(InputStream stream, String versionID) throws XMLStreamException, IOException{
 		

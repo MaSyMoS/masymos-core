@@ -30,7 +30,7 @@ import de.unirostock.sems.masymos.database.traverse.DocumentTraverser;
 */
 public class ModelDeleter {
 	
-	final static Logger logger = Logger.getLogger(ModelDeleter.class);
+	static final Logger logger = Logger.getLogger(ModelDeleter.class);
 	
 	private static GraphDatabaseService graphDB = Manager.instance().getDatabase();
 	private static Index<Node> nodeDeleteIndex = Manager.instance().getNodeDeleteIndex();

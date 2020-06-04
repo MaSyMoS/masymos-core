@@ -26,7 +26,7 @@ import de.unirostock.sems.masymos.extractor.Extractor;
 */
 public class ModelInserter {
 	
-	final static Logger logger = Logger.getLogger(ModelInserter.class);
+	static final Logger logger = Logger.getLogger(ModelInserter.class);
 
 	private static GraphDatabaseService graphDB = Manager.instance().getDatabase();
 

@@ -56,7 +56,7 @@ import de.unirostock.sems.masymos.util.IndexText;
 
 public class SBMLExtractor extends Extractor{
 
-	final static Logger logger = Logger.getLogger(SBMLExtractor.class);
+	static final Logger logger = Logger.getLogger(SBMLExtractor.class);
 	
 	private static SBMLReader reader = new SBMLReader();
 

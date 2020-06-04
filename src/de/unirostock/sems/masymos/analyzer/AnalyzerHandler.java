@@ -18,22 +18,22 @@ import org.apache.log4j.Logger;
 */
 public class AnalyzerHandler{
 	
-	final static Logger logger = Logger.getLogger(AnalyzerHandler.class);
+	static final Logger logger = Logger.getLogger(AnalyzerHandler.class);
 
-	private final static Analyzer lowerCaseKeywordAnalyzer =  createLowerCaseKeywordAnalyzer();
-	private final static Analyzer modelIndexAnalyzer = new ModelIndexAnalyzer();
-	private final static Analyzer annotationIndexAnalyzer = new AnnotationIndexAnalyzer();
-	private final static Analyzer constituentIndexAnalyzer = new ConstituentIndexAnalyzer();
-	private final static Analyzer personIndexAnalyzer = new PersonIndexAnalyzer();
-	private final static Analyzer publicationIndexAnalyzer = new PublicationIndexAnalyzer();
-	private final static Analyzer sedmlIndexAnalyzer = new SedmlndexAnalyzer();
-	private final static List<Analyzer> availableAnalyzers = Arrays.asList(lowerCaseKeywordAnalyzer, modelIndexAnalyzer, annotationIndexAnalyzer, constituentIndexAnalyzer, personIndexAnalyzer, publicationIndexAnalyzer, sedmlIndexAnalyzer);
+	private static final Analyzer lowerCaseKeywordAnalyzer =  createLowerCaseKeywordAnalyzer();
+	private static final Analyzer modelIndexAnalyzer = new ModelIndexAnalyzer();
+	private static final Analyzer annotationIndexAnalyzer = new AnnotationIndexAnalyzer();
+	private static final Analyzer constituentIndexAnalyzer = new ConstituentIndexAnalyzer();
+	private static final Analyzer personIndexAnalyzer = new PersonIndexAnalyzer();
+	private static final Analyzer publicationIndexAnalyzer = new PublicationIndexAnalyzer();
+	private static final Analyzer sedmlIndexAnalyzer = new SedmlndexAnalyzer();
+	private static final List<Analyzer> availableAnalyzers = Arrays.asList(lowerCaseKeywordAnalyzer, modelIndexAnalyzer, annotationIndexAnalyzer, constituentIndexAnalyzer, personIndexAnalyzer, publicationIndexAnalyzer, sedmlIndexAnalyzer);
 		
 	public static List<Analyzer> getAvailableanalyzers() {
 		return availableAnalyzers;
 	}
 
-	private final static Analyzer createLowerCaseKeywordAnalyzer() {	
+	private static final Analyzer createLowerCaseKeywordAnalyzer() {	
 		Boolean createdCustom = false;
 		Analyzer custom = null;
 		try {

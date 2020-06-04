@@ -33,7 +33,7 @@ import de.unirostock.sems.masymos.query.results.VersionResultSet;
 
 public class SBMLModelQuery implements IQueryInterface {
 	
-	final static Logger logger = Logger.getLogger(SBMLModelQuery.class);
+	static final Logger logger = Logger.getLogger(SBMLModelQuery.class);
 	
 	private final Analyzer analyzer = AnalyzerHandler.getModelindexanalyzer();
 	private final Index<Node> index = Manager.instance().getModelIndex();

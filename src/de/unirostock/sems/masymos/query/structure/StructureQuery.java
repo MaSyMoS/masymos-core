@@ -21,7 +21,7 @@ import de.unirostock.sems.masymos.database.Manager;
 */
 
 public class StructureQuery {
-	final static Logger logger = Logger.getLogger(StructureQuery.class);
+	static final Logger logger = Logger.getLogger(StructureQuery.class);
 	
 	public static void runCypherQuery(String cquery){
 		

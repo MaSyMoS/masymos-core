@@ -35,7 +35,7 @@ import de.unirostock.sems.masymos.query.results.PublicationResultSet;
 
 public class PublicationQuery implements IQueryInterface {
 	
-	final static Logger logger = Logger.getLogger(PersonQuery.class);
+	static final Logger logger = Logger.getLogger(PersonQuery.class);
 
 	private final Analyzer analyzer = AnalyzerHandler.getPublicationindexanalyzer();
 	private final Index<Node> index = Manager.instance().getPublicationIndex();

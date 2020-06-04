@@ -23,7 +23,7 @@ import de.unirostock.sems.masymos.query.results.VersionResultSet;
 */
 public class ModelResultSetWriter {
 	
-	final static Logger logger = Logger.getLogger(ModelResultSetWriter.class);
+	static final Logger logger = Logger.getLogger(ModelResultSetWriter.class);
 	
 	
 	public static void writeModelResults(List<VersionResultSet> mrs, List<IQueryInterface> qL, String path){

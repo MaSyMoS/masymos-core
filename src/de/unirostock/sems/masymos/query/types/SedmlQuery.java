@@ -34,7 +34,7 @@ import de.unirostock.sems.masymos.query.results.SedmlResultSet;
 
 public class SedmlQuery implements IQueryInterface {
 	
-	final static Logger logger = Logger.getLogger(SedmlQuery.class);
+	static final Logger logger = Logger.getLogger(SedmlQuery.class);
 	
 	private final Analyzer analyzer = AnalyzerHandler.getSedmlindexanalyzer();
 	private final Index<Node> index = Manager.instance().getSedmlIndex();

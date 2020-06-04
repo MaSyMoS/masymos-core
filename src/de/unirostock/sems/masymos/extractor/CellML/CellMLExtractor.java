@@ -49,7 +49,7 @@ import de.unirostock.sems.masymos.util.IndexText;
 */
 public class CellMLExtractor extends Extractor{
 	
-	final static Logger logger = Logger.getLogger(CellMLExtractor.class);
+	static final Logger logger = Logger.getLogger(CellMLExtractor.class);
 	
 	public static Node extractStoreIndexCellML(String filePath, String versionID, Long uID) throws XMLStreamException, IOException{
 		Node documentNode = null;

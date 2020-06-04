@@ -11,11 +11,11 @@ public class Property {
 		/*
 		 * Model Type Properties
 		 */
-		public final static  String SBML = "SBML";
-		public final static  String CELLML = "CELLML";
-		public final static  String XML = "XML";
-		public final static  String SEDML = "SEDML";
-		public final static  String BIOPAX = "BIOPAX";
+		public static final  String SBML = "SBML";
+		public static final  String CELLML = "CELLML";
+		public static final  String XML = "XML";
+		public static final  String SEDML = "SEDML";
+		public static final  String BIOPAX = "BIOPAX";
 		
 	
 	}
@@ -24,25 +24,25 @@ public class Property {
 		/*
 		 * General Properties
 		 */
-		public final static  String ID = "ID";
-		public final static  String NAME = "NAME";
-		public final static  String CREATED = "CREATED";
-		public final static  String MODIFIED = "MODIFIED";
-		public final static  String CREATOR = "CREATOR";
-		public final static  String ENCODER = "ENCODER";
-		public final static  String SUBMITTER = "SUBMITTER";
-		public final static  String AUTHOR = "AUTHOR";
-		public final static  String EMAIL = "EMAIL";
-		public final static  String URI = "URI";
-		public final static  String FILENAME = "FILENAME";
-		public final static  String FILEID = "FILEID";
-		public final static  String META = "META";
-		public final static  String XMLDOC = "XMLDOC";
-		public final static  String VERSIONID = "VERSIONID";
-		public final static  String RESOURCETEXT = "RESOURCETEXT";
-		public final static  String NONRDF = "NONRDF";
-		public final static  String IS_INDEXED = "ISINDEXED";
-		public final static  String UID = "UID";
+		public static final  String ID = "ID";
+		public static final  String NAME = "NAME";
+		public static final  String CREATED = "CREATED";
+		public static final  String MODIFIED = "MODIFIED";
+		public static final  String CREATOR = "CREATOR";
+		public static final  String ENCODER = "ENCODER";
+		public static final  String SUBMITTER = "SUBMITTER";
+		public static final  String AUTHOR = "AUTHOR";
+		public static final  String EMAIL = "EMAIL";
+		public static final  String URI = "URI";
+		public static final  String FILENAME = "FILENAME";
+		public static final  String FILEID = "FILEID";
+		public static final  String META = "META";
+		public static final  String XMLDOC = "XMLDOC";
+		public static final  String VERSIONID = "VERSIONID";
+		public static final  String RESOURCETEXT = "RESOURCETEXT";
+		public static final  String NONRDF = "NONRDF";
+		public static final  String IS_INDEXED = "ISINDEXED";
+		public static final  String UID = "UID";
 		
 	
 	}
@@ -51,41 +51,41 @@ public class Property {
 	/*
 	 * Properties to store XML in DB
 	 */
-		public final static  String VALUE = "VALUE";
-		public final static  String ELEMENT = "ELEMENT";
-		public final static  String ATTRIBUTE_NAMES = "ATTRIBUTENAMES";
-		public final static  String ATTRIBUTE_VALUES = "ATTRIBUTEVALUES";
+		public static final  String VALUE = "VALUE";
+		public static final  String ELEMENT = "ELEMENT";
+		public static final  String ATTRIBUTE_NAMES = "ATTRIBUTENAMES";
+		public static final  String ATTRIBUTE_VALUES = "ATTRIBUTEVALUES";
 	}
 	
 	public class SBML{
 	/*
 	 * Properties to store SBML in DB
 	 */	
-		public final static  String VERSION = "VERSION";
-		public final static  String LEVEL = "LEVEL";
-		//public final static  String NAME = "NAME";
-		public final static  String COMPARTMENT = "COMPARTMENT";
-		public final static  String REACTION = "REACTION";
-		public final static  String SPECIES = "SPECIES";
-		public final static  String PARAMETER = "PARAMETER";
-		public final static  String RULE = "RULE";
-		public final static  String FUNCTION = "FUNCTION";
-		public final static  String EVENT = "EVENT";
+		public static final  String VERSION = "VERSION";
+		public static final  String LEVEL = "LEVEL";
+		//public static final  String NAME = "NAME";
+		public static final  String COMPARTMENT = "COMPARTMENT";
+		public static final  String REACTION = "REACTION";
+		public static final  String SPECIES = "SPECIES";
+		public static final  String PARAMETER = "PARAMETER";
+		public static final  String RULE = "RULE";
+		public static final  String FUNCTION = "FUNCTION";
+		public static final  String EVENT = "EVENT";
 	}
 	
 	public class CellML{
 	/*
 	 * Properties to store CellML in DB
 	 */	
-		public final static  String VERSION = "VERSION";
-		//public final static  String NAME = "NAME";
-		public final static  String COMPONENT = "COMPONENT";
-		//public final static  String GROUP = "GROUP";
-		public final static  String VARIABLE = "VARIABLE";
-		//public final static  String CONNECTION = "CONNECTION";	
-		public final static  String REVERSIBLE = "REVERSIBLE";
-		public final static  String REACTIONDIRECTION = "REACTIONDIRECTION";
-		public final static  String ISPRIVATECONNECTION = "ISPRIVATECONNECTION";
+		public static final  String VERSION = "VERSION";
+		//public static final  String NAME = "NAME";
+		public static final  String COMPONENT = "COMPONENT";
+		//public static final  String GROUP = "GROUP";
+		public static final  String VARIABLE = "VARIABLE";
+		//public static final  String CONNECTION = "CONNECTION";	
+		public static final  String REVERSIBLE = "REVERSIBLE";
+		public static final  String REACTIONDIRECTION = "REACTIONDIRECTION";
+		public static final  String ISPRIVATECONNECTION = "ISPRIVATECONNECTION";
 	}
 	
 	
@@ -94,14 +94,14 @@ public class Property {
 	/*
 	 * Properties to store Publication in DB
 	 */
-		public final static  String AUTHOR = "AUTHOR";
-		public final static  String TITLE = "TITLE";
-		public final static  String ABSTRACT = "ABSTRACT";
-		public final static  String JOURNAL = "JOURNAL";
-		public final static  String YEAR = "YEAR";
-		public final static  String AFFILIATION = "AFFILIATION";
-		public final static  String SYNOPSIS = "SYNOPSIS";
-		public final static  String ID = "PUBID";
+		public static final  String AUTHOR = "AUTHOR";
+		public static final  String TITLE = "TITLE";
+		public static final  String ABSTRACT = "ABSTRACT";
+		public static final  String JOURNAL = "JOURNAL";
+		public static final  String YEAR = "YEAR";
+		public static final  String AFFILIATION = "AFFILIATION";
+		public static final  String SYNOPSIS = "SYNOPSIS";
+		public static final  String ID = "PUBID";
 		
 	}	
 	
@@ -109,30 +109,30 @@ public class Property {
 	/*
 	 * Properties to store Publication in DB
 	 */
-		public final static  String FAMILYNAME = "FAMILYNAME";
-		public final static  String GIVENNAME = "GIVENNAME";
-		public final static  String EMAIL = "EMAIL";
-		public final static  String ORGANIZATION = "ORGANIZATION";		
+		public static final  String FAMILYNAME = "FAMILYNAME";
+		public static final  String GIVENNAME = "GIVENNAME";
+		public static final  String EMAIL = "EMAIL";
+		public static final  String ORGANIZATION = "ORGANIZATION";		
 	}	
 	
 	public class SEDML{
 		/*
 		 * Properties to store SBML in DB
 		 */	
-			public final static  String VERSION = "VERSION";
-			public final static  String LEVEL = "LEVEL";
-			public final static  String NAME = "NAME";
-			public final static  String MODELSOURCE = "MODELSOURCE";
-			public final static  String MODELCHANGED = "MODELCHANGED";
-			public final static  String OUTPUT_TYPE = "OUTPUTTYPE";
-			public final static  String XDATA = "XDATA";
-			public final static  String YDATA = "YDATA";
-			public final static  String ZDATA = "ZDATA";
-			public final static  String DATALABEL = "DATALABEL";
-			public final static  String SIM_KISAO = "SIMKISAO";
-			public final static  String SIM_TYPE = "SIMTYPE";
-			public final static  String MATH = "MATH";
-			public final static  String TARGET = "TARGET";
+			public static final  String VERSION = "VERSION";
+			public static final  String LEVEL = "LEVEL";
+			public static final  String NAME = "NAME";
+			public static final  String MODELSOURCE = "MODELSOURCE";
+			public static final  String MODELCHANGED = "MODELCHANGED";
+			public static final  String OUTPUT_TYPE = "OUTPUTTYPE";
+			public static final  String XDATA = "XDATA";
+			public static final  String YDATA = "YDATA";
+			public static final  String ZDATA = "ZDATA";
+			public static final  String DATALABEL = "DATALABEL";
+			public static final  String SIM_KISAO = "SIMKISAO";
+			public static final  String SIM_TYPE = "SIMTYPE";
+			public static final  String MATH = "MATH";
+			public static final  String TARGET = "TARGET";
 			
 	}
 	
@@ -140,34 +140,34 @@ public class Property {
 	/*
 	 * Properties to store SBML in DB
 	 */	
-		public final static  String LEVEL = "LEVEL";
-		public final static  String RDFID = "RDFID";
+		public static final  String LEVEL = "LEVEL";
+		public static final  String RDFID = "RDFID";
 	}
 	
 	public class GroupCalc{
-		public final static  String P = "Probability";
-		public final static  String IC = "InformationContent";
-		public final static  String COUNTofCONCEPTS = "COUNTofCONCEPTS";
+		public static final  String P = "Probability";
+		public static final  String IC = "InformationContent";
+		public static final  String COUNTofCONCEPTS = "COUNTofCONCEPTS";
 		
-		public final static  String Trissl = "TrisslScore";
+		public static final  String Trissl = "TrisslScore";
 
-		public final static  String ef = "entityfrequency";
-		public final static  String EF = "aggregatedEntityFrequency";
-		public final static  String EP = "EntityProbability";
+		public static final  String ef = "entityfrequency";
+		public static final  String EF = "aggregatedEntityFrequency";
+		public static final  String EP = "EntityProbability";
 
-		public final static  String df = "documentfrequency";
-		public final static  String DF = "aggregatedDocumentFrequency";
-		public final static  String DP = "DocumentProbability";
+		public static final  String df = "documentfrequency";
+		public static final  String DF = "aggregatedDocumentFrequency";
+		public static final  String DP = "DocumentProbability";
 
 		
 	}
 	
 	public class  Ontology {
 		public static final String NODETYPE = "NODETYPE";
-		public final static  String OntologyLongID = "OntologyLongID"; //old
-		public final static  String TermID = "id";
-		public final static  String isLeaf = "isLeaf";
-		public final static  String depth = "depth";
+		public static final  String OntologyLongID = "OntologyLongID"; //old
+		public static final  String TermID = "id";
+		public static final  String isLeaf = "isLeaf";
+		public static final  String depth = "depth";
 
 		
 	}
