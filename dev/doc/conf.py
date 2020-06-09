@@ -20,7 +20,7 @@
 project = 'MaSyMoS'
 copyright = '2020, Ron Henkel and friends'
 author = 'Ron Henkel and friends'
-
+master_doc = 'index'
 
 # -- General configuration ---------------------------------------------------
 
