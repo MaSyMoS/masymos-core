@@ -1,11 +1,9 @@
-************
-Contributing
-************
+***********************
+Contributing to MaSyMoS
+***********************
 
 .. contents:: 
     :depth: 4
-
-.. toctree::
 
 Documentation
 #############
@@ -49,17 +47,6 @@ Helpful Links:
 - `An introduction to Sphinx and Read the Docs for Technical Writers <https://www.ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/>`__
 - `reStructuredText Primer Documentation <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`__
 - `ReStructuredText-CheatSheet <https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html>`__
-
-
-
-
-
-
-
-
-
-
-
 
 Contribution to MaSyMoS
 #######################
