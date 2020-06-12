@@ -1,6 +1,6 @@
-***********************
-ReadTheDocs Integration
-***********************
+***********
+ReadTheDocs
+***********
 
 The MaSyMoS GitHub projects are in an organisation → so the documentation is added manually to https://readthedocs.org.
 

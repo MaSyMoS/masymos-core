@@ -1,6 +1,6 @@
-***********************
-Contributing to MaSyMoS
-***********************
+************
+Contributing
+************
 
 .. contents:: 
     :depth: 4
@@ -10,7 +10,7 @@ Documentation
 
 If you like to contribute to this project, please try to follow the contribution specifications!
 
-The Documentation is in ReStructuredText.
+The Documentation is in reStructuredText.
 All Files are in the ``masymos-core`` project in Folder ``/dev/doc``.
 
 .. _consist: 
@@ -40,6 +40,11 @@ Titles and Headers
 - Header 3 is underlined with ``-``
 - Header 4 is underlined with ``~``
 - Header 5 is underlined with ``^``
+
+Special Structures
+------------------
+
+- ``rst_directives.rst`` defines global directives, include it with ``.. include:: rst_directives.rst``
 
 Helpful Links:
 ==============

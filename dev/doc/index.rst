@@ -4,6 +4,11 @@ MaSyMoS documentation!
 
 Welcome to the MaSyMoS-Documentation!
 
+"**Ma**\ nagement **Sy**\ stem for **Mo**\ dels and **S**\ imulations" is a Neo4J based database for SBML and CellML Models as well as simulation descriptions in SED-ML format. In addition, MaSyMoS contains bio-ontologies that are most frequently used for the annotation of models, i.e., GO, ChEBI, SBO, KiSAO.
+
+All data is represented as a Graph and can be queried using Cypher. A description of the underlying database is available from our latest publication in [Oxford DATABASE](http://www.ncbi.nlm.nih.gov/pubmed/25754863).
+
+
 Find the `MaSyMoS project on GitHub <https://github.com/MaSyMoS>`__.
 
 Table of Content

@@ -1,3 +1,5 @@
+.. _contrib_start:
+
 ***************
 Getting Started
 ***************
