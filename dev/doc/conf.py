@@ -44,10 +44,13 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
+# alabaster documentation: https://alabaster.readthedocs.io/en/latest/customization.html
 html_theme = 'alabaster'
 
 html_theme_options = {
-    "fixed_sidebar": "true"
+     "fixed_sidebar": "true"
+    ,"show_powered_by": "false"
+    ,"font_size": "10pt"
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

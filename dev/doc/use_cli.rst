@@ -15,7 +15,7 @@ MainExtractor
     :header: "Argument", "Type", "Required", "Default", "Description"
     :widths: 10, 10, 10, 10, 70
 
-    ``-dbPath``, String, true, /, "points the the path of your database, if no DB exists one will be created"
+    ``-dbPath``, String, true, /, "pointsthepath of your database, if no DB exists one will be created"
     ``-directory``, String, annoOnly==false, /, "points to the directory containing SBML, CellML, Sed-ML files, also OWL files can be processed"
     ``-type``, String, annoOnly==false, SBML, "specifies the expected type of input ``SBML|CELLML|SEDML|OWL``"
     ``-ontology``, String, type==OWL, /, "is expected when ``-type`` is ``OWL``, used to define the ontology namespace"
@@ -37,7 +37,7 @@ MainIndex
     :header: "Argument", "Type", "Required", "Default", "Description"
     :widths: 10, 10, 10, 10, 70
     
-    ``-dbPath``, String, true, /, "points the the path of your database, if no DB exists one will be created"
+    ``-dbPath``, String, true, /, "pointsthepath of your database, if no DB exists one will be created"
     ``-deleteIndex``, bool, false, false, "if true, delete all created index structures"
 
 MainAnalyzer

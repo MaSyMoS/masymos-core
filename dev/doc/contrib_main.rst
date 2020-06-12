@@ -41,11 +41,6 @@ Titles and Headers
 - Header 4 is underlined with ``~``
 - Header 5 is underlined with ``^``
 
-Special Structures
-------------------
-
-- ``rst_directives.rst`` defines global directives, include it with ``.. include:: rst_directives.rst``
-
 Helpful Links:
 ==============
 
