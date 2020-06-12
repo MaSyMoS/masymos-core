@@ -4,6 +4,8 @@ MaSyMoS documentation!
 
 Welcome to the MaSyMoS-Documentation!
 
+Find the `MaSyMoS project on GitHub <https://github.com/MaSyMoS>`__.
+
 Table of Content
 ################
 
@@ -32,6 +34,13 @@ Table of Content
 
     contrib_main
     contrib_start
+    contrib_rtfd
+
+License
+#######
+
+.. literalinclude:: ../../LICENSE
+    :language: text
 
 
 .. Indices and tables
