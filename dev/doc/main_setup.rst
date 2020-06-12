@@ -1,6 +1,10 @@
+.. _main_setup:
+
 *****
 Setup
 *****
+
+.. include:: rst_directives.rst
 
 .. _`Neo4J WebServer`: https://neo4j.com/download/other-releases/
 
@@ -23,7 +27,7 @@ Setup Server
 ############
 
 If you want to use MaSyMoS as a search server for models you will have to set up the server version. To do so, start by downloading `Neo4J WebServer`_.
-Please check the Neo4J-vesion in pom.xml (``<groupId>org.neo4j</groupId>``) before downloading the server. You might want to make sure to compile MaSyMoS with the same version as the downloaded server. Follow the Neo4J setup instructions.
+Please check the Neo4J-vesion in pom.xml (:c_xml:`<groupId>org.neo4j</groupId>`) before downloading the server. You might want to make sure to compile MaSyMoS with the same version as the downloaded server. Follow the Neo4J setup instructions.
 
 To create a Server-MaSyMoS you need ``masymos-core`` and ``masymos-morre``. Then follow these steps:
 

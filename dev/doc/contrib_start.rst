@@ -4,6 +4,8 @@
 Getting Started
 ***************
 
+.. include:: rst_directives.rst
+
 .. contents:: 
 
 Installation of MaSyMoS Development Environment
@@ -40,7 +42,7 @@ Download/Install needed Software
 
 - `Download the newest "Eclipse IDE Enterprise for Java Developers" <https://www.eclipse.org/downloads/packages/>`__ and extract it to ``📁 eclipse``
 - `Download Neo4j v3.5 <https://neo4j.com/download-center/#community>`__ end extract it to ``📁 database-engine``
-- install Java 11 JDK (``apt install openjdk-11-jre``)
+- install Java 11 JDK (:c_java:`apt install openjdk-11-jre`)
 - create a file ``settings.xml`` in ``📁 mvn`` and paste the following content (please replace ``[ENTER_HERE_YOUR_PROJECT_ROOT]``):
 
 .. code-block:: xml
