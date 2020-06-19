@@ -166,7 +166,7 @@ To create a Server-MaSyMoS you need ``masymos-core`` and ``masymos-morre``. Then
         log4j-core-2.8.2.jar
         log4j-slf4j-impl-2.1.jar
         mail-1.4.jar
-        masymos-core-1.0.1.jar
+        masymos-core-1.0.2.jar
         metainf-services-1.8.jar
         miriam-lib-1.1.6.jar
         netty-all-4.1.32.Final.jar

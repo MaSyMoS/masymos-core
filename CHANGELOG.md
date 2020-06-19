@@ -8,8 +8,23 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
+
+### Changed
+
+### Removed
+
+
+
+
+## 1.0.2 - 2020-06-19
+
+### Added
 - [added contributing and developer documentation; project setup and getting started](https://github.com/MaSyMoS/masymos-core/issues/11)
-- [integrated documentation with ReadTheDocs](https://github.com/MaSyMoS/masymos-core/issues/7)
+- Documentation
+    - [integrated documentation with ReadTheDocs](https://github.com/MaSyMoS/masymos-core/issues/7)
+    - [created developer documentation](https://github.com/MaSyMoS/masymos-core/issues/7)
+    - [added overview UML to documentation](https://github.com/MaSyMoS/masymos-core/issues/6)
+    - [added resource definitions](https://github.com/MaSyMoS/masymos-core/issues/14)
 - added eclipse preferences and project meta-data
 - added CHANGELOG.md
 
@@ -21,12 +36,6 @@ All notable changes to this project will be documented in this file.
     - force code and outcome to UTF-8 in pom of all projects
     - fix encoding and line breaks of all files
 - [upgraded jsbml library and avoid crashing in library](https://github.com/MaSyMoS/masymos-core/issues/9)
-
-### Removed
-
-
-
-
 
 
 ## 1.0.1 - 2019-12-06
