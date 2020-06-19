@@ -1,0 +1,40 @@
+@startuml
+
+title MaSyMoS - //command line interface// mode
+header version: %date("dd.MM.yyyy")
+
+skinparam defaultFontName Helvetica 
+
+skinparam shadowing false
+
+legend bottom
+	ℹ the Neo4J Database cannot be used simultaneously
+    by MaSyMoS and the Neo4J engine
+endlegend
+
+node "Neo4j Webserver" as n {
+	rectangle "Neo4j-Runtime" as n_run #ffccaa
+    database "Neo4j-Database" as n_db
+    
+    n_run -> n_db   : read/write
+}
+frame "MaSyMoS" as m #ccffcc {
+    component "masymos_cli" as cli
+    component "masymos_core" as core
+    
+    cli -> core
+}
+actor "user" as user
+
+rectangle "external content" as external {
+    file "Files\n<sup>(SBML, CELLML,</sup>\n<sup>SEDML, OWL,…)</sup>"
+    cloud "internet\nresources"
+}
+
+user --> cli         : use
+core ..> n_db       : initialise
+core --> n_db       : read (Queries)
+user --> n          : use
+external <-- core   : read
+
+@enduml
