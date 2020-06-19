@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg82"
+   zoomAndPan="magnify"
+   width="611px"
+   viewBox="0 0 611 325"
+   version="1.1"
+   style="width:611px;height:325px;"
+   preserveAspectRatio="none"
+   height="325px"
+   contentStyleType="text/css"
+   contentScriptType="application/ecmascript">
+  <metadata
+     id="metadata86">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2" />
+  <g
+     id="g80">
+    <text
+       id="text4"
+       y="9.2822"
+       x="504"
+       textLength="95"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="10"
+       font-family="Helvetica"
+       fill="#888888">version: 19.06.2020</text>
+    <text
+       id="text6"
+       y="28.3486"
+       x="114"
+       textLength="99"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="18"
+       font-family="Helvetica"
+       fill="#000000">MaSyMoS -</text>
+    <text
+       id="text8"
+       y="28.3486"
+       x="219"
+       textLength="210"
+       lengthAdjust="spacingAndGlyphs"
+       font-style="italic"
+       font-size="18"
+       font-family="Helvetica"
+       fill="#000000">command line interface</text>
+    <text
+       id="text10"
+       y="28.3486"
+       x="435"
+       textLength="50"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="18"
+       font-family="Helvetica"
+       fill="#000000">mode</text>
+    <!--cluster n-->
+    <polygon
+       id="polygon12"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5"
+       points="531,292.0938 14,292.0938 14,59.0938 24,49.0938 541,49.0938 541,282.0938 " />
+    <line
+       id="line14"
+       y2="50.0938"
+       y1="59.0938"
+       x2="540"
+       x1="531"
+       style="stroke: #000000; stroke-width: 1.5;" />
+    <line
+       id="line16"
+       y2="59.0938"
+       y1="59.0938"
+       x2="531"
+       x1="14"
+       style="stroke: #000000; stroke-width: 1.5;" />
+    <line
+       id="line18"
+       y2="292.0938"
+       y1="59.0938"
+       x2="531"
+       x1="531"
+       style="stroke: #000000; stroke-width: 1.5;" />
+    <text
+       id="text20"
+       y="75.0889"
+       x="205"
+       textLength="137"
+       lengthAdjust="spacingAndGlyphs"
+       font-weight="bold"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">Neo4j Webserver</text>
+    <!--cluster n_run-->
+    <rect
+       id="rect22"
+       y="81.093803"
+       x="171"
+       width="352"
+       style="fill:#ffccaa;stroke:#000000;stroke-width:1.5"
+       height="106" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Helvetica;fill:#000000"
+       transform="translate(-10)"
+       id="text24"
+       y="96.088898"
+       x="299.5"
+       textLength="115"
+       lengthAdjust="spacingAndGlyphs"
+       font-weight="bold"
+       font-size="14">Neo4j-Runtime</text>
+    <!--cluster /lib/ext-->
+    <polygon
+       transform="translate(-10)"
+       id="polygon26"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.5"
+       points="444,108.0938 451,130.3906 525,130.3906 525,179.0938 385,179.0938 385,108.0938 " />
+    <line
+       id="line28"
+       y2="130.39059"
+       y1="130.39059"
+       x2="441"
+       x1="375"
+       style="stroke:#000000;stroke-width:1.5" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Helvetica;fill:#000000"
+       transform="translate(-10)"
+       id="text30"
+       y="123.0889"
+       x="389"
+       textLength="53"
+       lengthAdjust="spacingAndGlyphs"
+       font-weight="bold"
+       font-size="14">/lib/ext</text>
+    <!--cluster /plugins-->
+    <polygon
+       transform="translate(-10)"
+       id="polygon32"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.5"
+       points="284,108.0938 291,130.3906 366,130.3906 366,179.0938 216,179.0938 216,108.0938 " />
+    <line
+       id="line34"
+       y2="130.39059"
+       y1="130.39059"
+       x2="281"
+       x1="206"
+       style="stroke:#000000;stroke-width:1.5" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Helvetica;fill:#000000"
+       transform="translate(-10)"
+       id="text36"
+       y="123.0889"
+       x="220"
+       textLength="62"
+       lengthAdjust="spacingAndGlyphs"
+       font-weight="bold"
+       font-size="14">/plugins</text>
+    <!--entity api-->
+    <ellipse
+       id="ellipse38"
+       style="stroke: #A80036; stroke-width: 2.0;"
+       ry="8"
+       rx="8"
+       fill="#FEFECE"
+       cy="275.0938"
+       cx="347" />
+    <text
+       id="text40"
+       y="305.0889"
+       x="314.5"
+       textLength="65"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">Neo4j API</text>
+    <!--entity n_db-->
+    <path
+       id="path42"
+       style="stroke: #000000; stroke-width: 1.5;"
+       fill="#FEFECE"
+       d="M22.5,140.5938 C22.5,130.5938 88,130.5938 88,130.5938 C88,130.5938 153.5,130.5938 153.5,140.5938 L153.5,165.8906 C153.5,175.8906 88,175.8906 88,175.8906 C88,175.8906 22.5,175.8906 22.5,165.8906 L22.5,140.5938 " />
+    <path
+       id="path44"
+       style="stroke: #000000; stroke-width: 1.5;"
+       fill="none"
+       d="M22.5,140.5938 C22.5,150.5938 88,150.5938 88,150.5938 C88,150.5938 153.5,150.5938 153.5,140.5938 " />
+    <text
+       id="text46"
+       y="167.5889"
+       x="32.5"
+       textLength="111"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">Neo4j-Database</text>
+    <!--entity core-->
+    <rect
+       id="rect48"
+       y="135.0938"
+       x="383"
+       width="124"
+       style="fill:#fefece;stroke:#a80036;stroke-width:1.5"
+       height="36.296902" />
+    <rect
+       id="rect50"
+       y="140.0938"
+       x="378"
+       width="10"
+       style="fill:#fefece;stroke:#a80036;stroke-width:1.5"
+       height="5" />
+    <rect
+       id="rect52"
+       y="161.39059"
+       x="378"
+       width="10"
+       style="fill:#fefece;stroke:#a80036;stroke-width:1.5"
+       height="5" />
+    <text
+       style="font-size:14px;font-family:Helvetica;fill:#000000"
+       transform="translate(-10)"
+       id="text54"
+       y="158.0889"
+       x="403"
+       textLength="104"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14">masymos_core</text>
+    <!--entity morre-->
+    <rect
+       id="rect56"
+       y="135.0938"
+       x="214"
+       width="134"
+       style="fill:#fefece;stroke:#a80036;stroke-width:1.5"
+       height="36.296902" />
+    <rect
+       id="rect58"
+       y="140.0938"
+       x="209"
+       width="10"
+       style="fill:#fefece;stroke:#a80036;stroke-width:1.5"
+       height="5" />
+    <rect
+       id="rect60"
+       y="161.39059"
+       x="209"
+       width="10"
+       style="fill:#fefece;stroke:#a80036;stroke-width:1.5"
+       height="5" />
+    <text
+       style="font-size:14px;font-family:Helvetica;fill:#000000"
+       transform="translate(-10)"
+       id="text62"
+       y="158.0889"
+       x="234"
+       textLength="114"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14">masymos_morre</text>
+    <!--entity user-->
+    <ellipse
+       id="ellipse64"
+       style="stroke: #A80036; stroke-width: 2.0;"
+       ry="8"
+       rx="8"
+       fill="#FEFECE"
+       cy="245.5938"
+       cx="565" />
+    <path
+       id="path66"
+       style="stroke: #A80036; stroke-width: 2.0;"
+       fill="none"
+       d="M565,253.5938 L565,280.5938 M552,261.5938 L578,261.5938 M565,280.5938 L552,295.5938 M565,280.5938 L578,295.5938 " />
+    <text
+       id="text68"
+       y="311.5889"
+       x="549.5"
+       textLength="31"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">user</text>
+    <!--link morre to core-->
+    <path
+       style="fill:none;stroke:#a80036;stroke-width:1"
+       id="morre-core"
+       d="m 348.2656,153.0938 c 9.7606,0 19.5213,0 29.2819,0" />
+    <polygon
+       transform="translate(-10)"
+       id="polygon71"
+       style="fill:#a80036;stroke:#a80036;stroke-width:1"
+       points="383.6517,149.0938 387.6517,153.0938 383.6517,157.0938 392.6517,153.0938 " />
+    <!--link n_run to n_db-->
+    <path
+       style="fill:none;stroke:#a80036;stroke-width:1"
+       id="n_run-n_db"
+       d="m 170.9779,153.0938 h -0.115 -0.2299 -0.4599 -0.9199 -1.8396 -3.6792 -4.717" />
+    <polygon
+       id="polygon74"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       points="153.8867,153.0938,162.8867,157.0938,158.8867,153.0938,162.8867,149.0938,153.8867,153.0938"
+       fill="#A80036" />
+    <!--link n_run to api-->
+    <path
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="n_run-api"
+       fill="none"
+       d="M208,187.0938 C248.4483,229.822 313.8057,260.7664 337.7929,271.2242 " />
+    <!--link user to api-->
+    <path
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="user-api"
+       fill="none"
+       d="M549.108,275.0938 C486.6178,275.0938 424.1276,275.0938 361.6374,275.0938 " />
+    <polygon
+       id="polygon78"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       points="356.3672,275.0938,365.3672,279.0938,361.3672,275.0938,365.3672,271.0938,356.3672,275.0938"
+       fill="#A80036" />
+    <!--
+@startuml
+
+title MaSyMoS - //command line interface// mode
+header version: 19.06.2020
+
+skinparam defaultFontName Helvetica
+
+skinparam shadowing false
+
+node "Neo4j Webserver" as n {
+    interface "Neo4j API" as api
+	rectangle "Neo4j-Runtime" as n_run #ffccaa {
+        folder "/lib/ext" #cccccc {
+            component "masymos_core" as core
+        }
+        folder "/plugins" #cccccc {
+            component "masymos_morre" as morre
+        }
+        morre -> core
+    }
+    database "Neo4j-Database" as n_db
+    
+    
+    n_run -> n_db
+    n_run - - api
+}
+
+actor "user" as user
+
+user -> api
+
+
+@enduml
+
+PlantUML version 1.2019.07(Mon Jun 24 21:59:20 CEST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.7+10-post-Ubuntu-2ubuntu218.04
+Operating System: Linux
+OS Version: 5.3.0-59-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+  </g>
+</svg>

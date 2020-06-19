@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg121"
+   zoomAndPan="magnify"
+   width="458px"
+   viewBox="0 0 458 484"
+   version="1.1"
+   style="width:458px;height:484px;"
+   preserveAspectRatio="none"
+   height="484px"
+   contentStyleType="text/css"
+   contentScriptType="application/ecmascript">
+  <metadata
+     id="metadata125">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2" />
+  <g
+     id="g119">
+    <text
+       id="text4"
+       y="9.2822"
+       x="351"
+       textLength="95"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="10"
+       font-family="Helvetica"
+       fill="#888888">version: 19.06.2020</text>
+    <text
+       id="text6"
+       y="28.3486"
+       x="37.5"
+       textLength="99"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="18"
+       font-family="Helvetica"
+       fill="#000000">MaSyMoS -</text>
+    <text
+       id="text8"
+       y="28.3486"
+       x="142.5"
+       textLength="210"
+       lengthAdjust="spacingAndGlyphs"
+       font-style="italic"
+       font-size="18"
+       font-family="Helvetica"
+       fill="#000000">command line interface</text>
+    <text
+       id="text10"
+       y="28.3486"
+       x="358.5"
+       textLength="50"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="18"
+       font-family="Helvetica"
+       fill="#000000">mode</text>
+    <!--cluster n-->
+    <polygon
+       id="polygon12"
+       style="stroke: #000000; stroke-width: 1.5;"
+       points="14,329.5938,24,319.5938,420,319.5938,420,394.5938,410,404.5938,14,404.5938,14,329.5938"
+       fill="#FFFFFF" />
+    <line
+       id="line14"
+       y2="320.5938"
+       y1="329.5938"
+       x2="419"
+       x1="410"
+       style="stroke: #000000; stroke-width: 1.5;" />
+    <line
+       id="line16"
+       y2="329.5938"
+       y1="329.5938"
+       x2="410"
+       x1="14"
+       style="stroke: #000000; stroke-width: 1.5;" />
+    <line
+       id="line18"
+       y2="404.5938"
+       y1="329.5938"
+       x2="410"
+       x1="410"
+       style="stroke: #000000; stroke-width: 1.5;" />
+    <text
+       id="text20"
+       y="345.5889"
+       x="144.5"
+       textLength="137"
+       lengthAdjust="spacingAndGlyphs"
+       font-weight="bold"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">Neo4j Webserver</text>
+    <!--cluster m-->
+    <rect
+       id="rect22"
+       y="201.5938"
+       x="121"
+       width="282"
+       style="stroke: #000000; stroke-width: 1.5;"
+       height="71"
+       fill="#CCFFCC" />
+    <path
+       id="path24"
+       style="stroke: #000000; stroke-width: 1.5;"
+       fill="none"
+       d="M205,202.5938 L205,210.8906 L195,220.8906 L121,220.8906 " />
+    <text
+       id="text26"
+       y="215.5889"
+       x="124"
+       textLength="74"
+       lengthAdjust="spacingAndGlyphs"
+       font-weight="bold"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">MaSyMoS</text>
+    <!--cluster external-->
+    <rect
+       id="rect28"
+       y="48.5938"
+       x="65"
+       width="296"
+       style="stroke: #000000; stroke-width: 1.5;"
+       height="98"
+       fill="#FFFFFF" />
+    <text
+       id="text30"
+       y="63.5889"
+       x="147.5"
+       textLength="131"
+       lengthAdjust="spacingAndGlyphs"
+       font-weight="bold"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">external content</text>
+    <!--entity n_run-->
+    <rect
+       id="rect32"
+       y="356.0938"
+       x="57.5"
+       width="123"
+       style="stroke: #000000; stroke-width: 1.5;"
+       height="36.2969"
+       fill="#FFCCAA" />
+    <text
+       id="text34"
+       y="379.0889"
+       x="67.5"
+       textLength="103"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">Neo4j-Runtime</text>
+    <!--entity n_db-->
+    <path
+       id="path36"
+       style="fill:#fefece;stroke:#000000;stroke-width:1.5"
+       d="m 270.5,361.5938 c 0,-10 65.5,-10 65.5,-10 0,0 65.5,0 65.5,10 v 25.2968 c 0,10 -65.5,10 -65.5,10 0,0 -65.5,0 -65.5,-10 v -25.2968" />
+    <path
+       id="path38"
+       style="fill:none;stroke:#000000;stroke-width:1.5"
+       d="m 270.5,361.5938 c 0,10 65.5,10 65.5,10 0,0 65.5,0 65.5,-10" />
+    <text
+       id="text40"
+       y="388.5889"
+       x="290.5"
+       textLength="111"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">Neo4j-Database</text>
+    <!--entity cli-->
+    <rect
+       id="rect42"
+       y="228.5938"
+       x="128.5"
+       width="107"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       height="36.2969"
+       fill="#FEFECE" />
+    <rect
+       id="rect44"
+       y="233.5938"
+       x="123.5"
+       width="10"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       height="5"
+       fill="#FEFECE" />
+    <rect
+       id="rect46"
+       y="254.8906"
+       x="123.5"
+       width="10"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       height="5"
+       fill="#FEFECE" />
+    <text
+       id="text48"
+       y="251.5889"
+       x="138.5"
+       textLength="87"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">masymos_cli</text>
+    <!--entity core-->
+    <rect
+       id="rect50"
+       y="228.5938"
+       x="271"
+       width="124"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       height="36.2969"
+       fill="#FEFECE" />
+    <rect
+       id="rect52"
+       y="233.5938"
+       x="266"
+       width="10"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       height="5"
+       fill="#FEFECE" />
+    <rect
+       id="rect54"
+       y="254.8906"
+       x="266"
+       width="10"
+       style="stroke: #A80036; stroke-width: 1.5;"
+       height="5"
+       fill="#FEFECE" />
+    <text
+       id="text56"
+       y="251.5889"
+       x="281"
+       textLength="104"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">masymos_core</text>
+    <!--entity Files\n<sup>(SBML, CELLML,</sup>\n<sup>SEDML, OWL,…)</sup>-->
+    <polygon
+       id="polygon58"
+       style="stroke: #000000; stroke-width: 1.5;"
+       points="208.5,76.0938,208.5,138,317.5,138,317.5,86.0938,307.5,76.0938,208.5,76.0938"
+       fill="#FEFECE" />
+    <path
+       id="path60"
+       style="stroke: #000000; stroke-width: 1.5;"
+       fill="#FEFECE"
+       d="M307.5,76.0938 L307.5,86.0938 L317.5,86.0938 " />
+    <text
+       id="text62"
+       y="99.0889"
+       x="218.5"
+       textLength="31"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">Files</text>
+    <text
+       id="text64"
+       y="112.6011"
+       x="218.5"
+       textLength="89"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="11"
+       font-family="Helvetica"
+       fill="#000000">(SBML, CELLML,</text>
+    <text
+       id="text66"
+       y="125.4058"
+       x="218.5"
+       textLength="89"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="11"
+       font-family="Helvetica"
+       fill="#000000">SEDML, OWL,…)</text>
+    <!--entity internet\nresources-->
+    <path
+       id="path68"
+       style="stroke: #000000; stroke-width: 1.5;"
+       fill="#FEFECE"
+       d="M81.34,85.7669 C85.0021,78.3314 90.3103,77.1429 95.5573,84.2136 C100.1171,78.6814 105.4682,77.6826 109.6211,84.6706 C113.4518,77.7952 118.9047,76.4955 123.8277,83.5572 C128.2263,77.5222 133.8534,76.6831 137.8093,84.0201 C143.1754,77.1243 147.7281,78.7634 152.1406,85.0563 C156.5323,77.9575 161.1535,78.8672 165.7255,84.8693 C172.4044,87.2373 174.1054,91.2102 168.8788,96.7406 C173.7959,99.1958 175.2285,104.1156 169.7146,107.3896 C174.9833,112.0791 173.5436,115.9109 168.1869,119.2294 C173.9721,123.4228 172.6659,128.9274 166.2918,131.1952 C162.823,138.1488 159.0023,140.0325 152.9243,133.8503 C150.2975,142.2926 143.3501,143.4344 137.7875,136.7973 C135.8103,143.6619 130.3197,146.054 124.9499,140.2298 C118.8497,148.0671 112.416,146.824 109.023,137.6893 C103.6735,143.5153 97.2621,140.4871 95.5535,133.7773 C90.3029,137.819 85.2834,138.3977 83.062,130.5853 C77.5385,129.1462 75.5551,125.9107 78.4648,120.5922 C70.1025,119.9271 68.0483,113.3844 72.8002,107.1804 C69.6328,101.5303 70.4015,97.9075 77.5099,97.0215 C72.7611,91.2304 74.1363,87.4904 81.34,85.7669 " />
+    <text
+       id="text70"
+       y="103.5889"
+       x="88"
+       textLength="54"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">internet</text>
+    <text
+       id="text72"
+       y="119.8857"
+       x="88"
+       textLength="70"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">resources</text>
+    <!--entity user-->
+    <ellipse
+       id="ellipse74"
+       style="stroke: #A80036; stroke-width: 2.0;"
+       ry="8"
+       rx="8"
+       fill="#FEFECE"
+       cy="77.5938"
+       cx="22" />
+    <path
+       id="path76"
+       style="stroke: #A80036; stroke-width: 2.0;"
+       fill="none"
+       d="M22,85.5938 L22,112.5938 M9,93.5938 L35,93.5938 M22,112.5938 L9,127.5938 M22,112.5938 L35,127.5938 " />
+    <text
+       id="text78"
+       y="143.5889"
+       x="6.5"
+       textLength="31"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">user</text>
+    <!--link n_run to n_db-->
+    <path
+       style="fill:none;stroke:#a80036;stroke-width:1"
+       id="n_run-n_db"
+       d="m 180.7289,374.0938 85.9527,0" />
+    <polygon
+       transform="translate(-10.151177)"
+       id="polygon81"
+       style="fill:#a80036;stroke:#a80036;stroke-width:1"
+       points="271.3106,370.0938 275.3106,374.0938 271.3106,378.0938 280.3106,374.0938 " />
+    <text
+       id="text83"
+       y="367.1606"
+       x="199"
+       textLength="63"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="13"
+       font-family="Helvetica"
+       fill="#000000">read/write</text>
+    <!--link cli to core-->
+    <path
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="cli-core"
+       fill="none"
+       d="M235.6758,246.5938 C245.6038,246.5938 255.5319,246.5938 265.4599,246.5938 " />
+    <polygon
+       id="polygon86"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       points="270.6517,246.5938,261.6517,242.5938,265.6517,246.5938,261.6517,250.5938,270.6517,246.5938"
+       fill="#A80036" />
+    <!--link user to cli-->
+    <path
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="user-cli"
+       fill="none"
+       d="M37.7538,126.1873 C43.5672,132.8717 50.3602,140.2801 57,146.5938 C87.7783,175.8608 126.3558,205.8221 152.4521,225.2187 " />
+    <polygon
+       id="polygon89"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       points="156.5302,228.2393,151.6788,219.6681,152.5123,225.2632,146.9172,226.0967,156.5302,228.2393"
+       fill="#A80036" />
+    <text
+       id="text91"
+       y="189.6606"
+       x="111"
+       textLength="23"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="13"
+       font-family="Helvetica"
+       fill="#000000">use</text>
+    <!--link core to n_db-->
+    <path
+       style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"
+       id="core-n_db"
+       fill="none"
+       d="M334.8626,264.8614 C337.0387,286.2039 340.6617,321.7376 343.1823,346.4587 " />
+    <polygon
+       id="polygon94"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       points="343.7025,351.5608,346.769,342.2014,343.1953,346.5865,338.8103,343.0129,343.7025,351.5608"
+       fill="#A80036" />
+    <text
+       id="text96"
+       y="307.6606"
+       x="340"
+       textLength="51"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="13"
+       font-family="Helvetica"
+       fill="#000000">initialise</text>
+    <!--link core to n_db-->
+    <path
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="core-n_db-1"
+       fill="none"
+       d="M270.8801,264.3221 C256.7082,271.3984 243.3717,281.1713 235,294.5938 C231.0015,301.0046 231.187,305.071 235,311.5938 C244.3856,327.6497 259.5827,339.9013 275.7604,349.1154 " />
+    <polygon
+       id="polygon99"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       points="280.3453,351.6344,274.3834,343.7949,275.9631,349.2268,270.5313,350.8064,280.3453,351.6344"
+       fill="#A80036" />
+    <text
+       id="text101"
+       y="307.6606"
+       x="236"
+       textLength="92"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="13"
+       font-family="Helvetica"
+       fill="#000000">read (Queries)</text>
+    <!--link user to n-->
+    <path
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="user-n"
+       fill="none"
+       d="M22,146.7781 C22,182.8049 22,237.2633 22,283.8452 C22,295.4906 22,306.6438 22,316.8936 C22,317.5342 22,318.1713 22,318.8048 " />
+    <polygon
+       id="polygon104"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       points="22,318.8048,26,309.8048,22,313.8048,18,309.8048,22,318.8048"
+       fill="#A80036" />
+    <text
+       id="text106"
+       y="251.1606"
+       x="23"
+       textLength="23"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="13"
+       font-family="Helvetica"
+       fill="#000000">use</text>
+    <!--link external to core-->
+    <path
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="external-core"
+       fill="none"
+       d="M347.2647,147.0978 C347.2381,147.283 347.2115,147.4686 347.1848,147.6545 C346.7583,150.6294 346.3194,153.6907 345.8722,156.8104 C342.294,181.768 338.1798,210.4649 335.5852,228.5621 " />
+    <polygon
+       id="polygon109"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       points="347.2647,147.0978,342.0279,155.439,346.5551,152.0471,349.9469,156.5743,347.2647,147.0978"
+       fill="#A80036" />
+    <text
+       id="text111"
+       y="189.6606"
+       x="344"
+       textLength="29"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="13"
+       font-family="Helvetica"
+       fill="#000000">read</text>
+    <rect
+       id="rect113"
+       y="430.5938"
+       x="33.5"
+       width="378"
+       style="stroke: #000000; stroke-width: 1.0;"
+       ry="5"
+       rx="5"
+       height="42.5938"
+       fill="#DDDDDD" />
+    <text
+       id="text115"
+       y="448.5889"
+       x="39.5"
+       textLength="366"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">ℹ the Neo4J Database cannot be used simultaneously</text>
+    <text
+       id="text117"
+       y="464.8857"
+       x="51.5"
+       textLength="244"
+       lengthAdjust="spacingAndGlyphs"
+       font-size="14"
+       font-family="Helvetica"
+       fill="#000000">by MaSyMoS and the Neo4J runtime</text>
+    <!--
+@startuml
+
+title MaSyMoS - //command line interface// mode
+header version: 19.06.2020
+
+skinparam defaultFontName Helvetica 
+
+skinparam shadowing false
+
+legend bottom
+	ℹ the Neo4J Database cannot be used simultaneously
+    by MaSyMoS and the Neo4J runtime
+endlegend
+
+node "Neo4j Webserver" as n {
+	rectangle "Neo4j-Runtime" as n_run #ffccaa
+    database "Neo4j-Database" as n_db
+    
+    n_run -> n_db   : read/write
+}
+frame "MaSyMoS" as m #ccffcc {
+    component "masymos_cli" as cli
+    component "masymos_core" as core
+    
+    cli -> core
+}
+actor "user" as user
+
+rectangle "external content" as external {
+    file "Files\n<sup>(SBML, CELLML,</sup>\n<sup>SEDML, OWL,…)</sup>"
+    cloud "internet\nresources"
+}
+
+user - -> cli         : use
+core ..> n_db       : initialise
+core - -> n_db       : read (Queries)
+user - -> n          : use
+external <- - core   : read
+
+@enduml
+
+PlantUML version 1.2019.07(Mon Jun 24 21:59:20 CEST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.7+10-post-Ubuntu-2ubuntu218.04
+Operating System: Linux
+OS Version: 5.3.0-59-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+  </g>
+</svg>

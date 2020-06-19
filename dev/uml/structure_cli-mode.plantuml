@@ -9,7 +9,7 @@ skinparam shadowing false
 
 legend bottom
 	ℹ the Neo4J Database cannot be used simultaneously
-    by MaSyMoS and the Neo4J engine
+    by MaSyMoS and the Neo4J runtime
 endlegend
 
 node "Neo4j Webserver" as n {
