@@ -17,7 +17,9 @@ MainExtractor
 
     ``-dbPath``, String, true, /, "pointsthepath of your database, if no DB exists one will be created"
     ``-directory``, String, annoOnly==false, /, "points to the directory containing SBML, CellML, Sed-ML files, also OWL files can be processed"
-    ``-type``, String, annoOnly==false, SBML, "specifies the expected type of input ``SBML|CELLML|SEDML|OWL``"
+    ``-type``, String, annoOnly==false, SBML, "specifies the expected type of input ``SBML|CELLML|SEDML|OWL|P2M``
+
+    P2M is working in the intended usage if one wants to index `Path2Models files <https://bmcsystbiol.biomedcentral.com/articles/10.1186/1752-0509-7-116>`__"
     ``-ontology``, String, type==OWL, /, "is expected when ``-type`` is ``OWL``, used to define the ontology namespace"
     ``-quiet``, boolean, false, false, "rewires the stdOut to dev0, faster but no debugging"
     ``-noAnno``, boolean, false, false, "creates only the model structures but does not resolve and index model annotations"
