@@ -8,8 +8,12 @@ Welcome to the MaSyMoS-Documentation!
 
 All data is represented as a Graph and can be queried using Cypher. A description of the underlying database is available from our latest publication in [Oxford DATABASE](http://www.ncbi.nlm.nih.gov/pubmed/25754863).
 
+Source Code, Feedback and Contribution
+######################################
 
-Find the `MaSyMoS project on GitHub <https://github.com/MaSyMoS>`__.
+- 🔬 Find the `MaSyMoS project on GitHub <https://github.com/MaSyMoS>`__.
+- 📝 Read open issues or `create new ones for feature requests and bugs <https://github.com/MaSyMoS/masymos-core/issues>`__.
+- 🔧 Contribute to the project after reading the :ref:`contrib_main`.
 
 Table of Content
 ################
