@@ -134,6 +134,10 @@
 		</dependency>
 	</dependencies>
 	<repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
 		<repository>
 			<id>ebi-repo</id>
 			<name>The EBI internal repository</name>
