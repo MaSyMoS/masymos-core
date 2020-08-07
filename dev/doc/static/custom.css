@@ -17,6 +17,11 @@ div.body {
     background-color: #fff;
 }
 
+/* list items */
+dl dd {
+    margin-left: 15px;
+}
+
 /*
 highligting all captions
 */
