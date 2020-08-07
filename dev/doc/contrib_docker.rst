@@ -32,12 +32,12 @@ Folder and Storage Overview
     - 📂 masymos-source
         - this is the docker-input-directory
         - it must contain the source repository of the masymos source code
-        - ⚙ `user_group_numbers.sh`
+        - 🔧 ``user_group_numbers.sh``
             - this file contains the UID and GID, that the files in ``📂 masymos-builds`` and ``📂 masymos-source`` will have after the run
             - if you have problems with editing/deleting the files, you may have to change the settings here
             - get your UID with :c_bash:`id -u`
             - get your GID with :c_bash:`id -g`
-    - 🏃 `maven-build-masymos-jars.sh`
+    - 🏃 ``maven-build-masymos-jars.sh``
         - ℹ call with parameter ``rebuild`` to force the creation of a new docker image
         - this file automatically checks all dependencies to run the docker container
             #. remove old jar-builds
