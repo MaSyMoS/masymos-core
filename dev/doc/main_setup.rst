@@ -51,7 +51,7 @@ To create a Server-MaSyMoS you need ``masymos-core`` and ``masymos-morre``. Then
         :widths: 10, 10, 80
         
         ``dbms.active_database``, … , "points the path of your database"
-        ``dbms.allow_format_migration``, true, "if you are using a server with a higher version then the one the DB was created with"
+        ``dbms.allow_upgrade`` (v3.3+) ``dbms.allow_format_migration`` (<v3.3), true, "if you are using a server with a higher version then the one the DB was created with"
         ``dbms.security.auth_enabled``, false, "or configure the authentication"
         ``dbms.unmanaged_extension_classes``, ``de.unirostock.morre.server.plugin=/morre``, "to allow MaSyMoS plugin to be loaded"
 

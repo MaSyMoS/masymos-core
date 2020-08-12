@@ -65,7 +65,7 @@ Basic Query
 
 For each query type a GET and POST request is possible. The GET request will return a JSON object holding all available features for the particular query. In case of the ``cellml_model_query`` the request is:
 
-    :c_bash:`curl -X GET http://morre.sems.uni-rostock.de:7474/morre/query/cellml_model_query/ -H "Content-Type: text/plain"`
+    :c_bash:`curl -X GET http://yourServer:7474/morre/query/cellml_model_query/ -H "Content-Type: text/plain"`
         > :c_json:`["ID","NAME","COMPONENT","VARIABLE","CREATOR","AUTHOR"]`
 
 Now we can setup a query using POST and a JSON object:
