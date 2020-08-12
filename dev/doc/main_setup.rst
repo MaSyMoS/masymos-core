@@ -12,28 +12,42 @@ MaSyMoS can be used as a standalone or as a plugin for the `Neo4J WebServer`_.
 
 If you want to run MaSyMoS from it's source locally on your computer, please follow the steps described in :ref:`contrib_start` to setup an development environment.
 
+Build Jar files
+###############
+
 Build Jar files with Docker
-###########################
+===========================
 
 The easiest way of creating the MaSyMoS-jar-files is to use `our MaSyMos-Docker-Project <https://github.com/MaSyMoS/masymos-docker>`__.
 
 #. clone the repository
-#. run the `jar-builder/maven-build-masymos-jars.sh` bash file
+#. run the ``jar-builder/maven-build-masymos-jars.sh`` bash file
 #. find all jar files in `jar-builder/masymos-builds`
 
 Find further information on the docker repository and how to tweak it on the documentation page :ref:`contrib_docker`.
 
-Setup Standalone locally
-########################
+Build Jar files locally
+=======================
 
-To create a standalone you need ``masymos-core`` and ``masymos-cli``.
+To create a local standalone you need ``masymos-core`` and ``masymos-cli``.
 
-To create it locally, clone the repositories, get the dependencies via Maven and build the jar.
+To create it locally, clone the repositories, get the dependencies via Maven and build the jar. You need to take care of the java version, you are using. Find more information on the :ref:`contrib_start`.
 
 Find the instructions on how to use the command line interface in the :ref:`use_cli`.
 
+Setup Server
+############
+
+Setup Server with Docker
+========================
+
+The easiest way of using the MaSyMoS Morre Neo4J Plugin is to use `our MaSyMos-Docker-Project <https://github.com/MaSyMoS/masymos-docker>`__.
+
+#. clone the repository
+#. find detailed usage information on the documentation page :ref:`contrib_docker`.
+
 Setup Server locally
-####################
+====================
 
 If you want to use MaSyMoS as a search server for models you will have to set up the server version. To do so, start by downloading `Neo4J WebServer`_.
 Please check the Neo4J-vesion in pom.xml (:c_xml:`<groupId>org.neo4j</groupId>`) before downloading the server. You might want to make sure to compile MaSyMoS with the same version as the downloaded server. Follow the Neo4J setup instructions.

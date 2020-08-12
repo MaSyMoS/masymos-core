@@ -22,6 +22,7 @@ Usage
 =====
 
 Call the ``🏃 jar-builder/maven-build-masymos-jars.sh`` to create the jar files and library folder automatically.
+Use the parameter ``rebuild`` to force a rebuild of the image.
 
 If you want a different version then the ``master`` of the repositories, please check them out manually in the folder ``📂 jar-builder/masymos-source``
 
@@ -67,16 +68,26 @@ Docker Dependencies
 Server Integration
 ##################
 
-Everything in the folder ``📂 server-integration`` is for running masymos-morre as neo4j plugin in a docker container.
+- Everything in the folder ``📂 server-integration`` is for running masymos-morre as neo4j plugin in a docker container.
+- open Ports: `7474 and 7687 for HTTP and Bolt <https://hub.docker.com/_/neo4j/>`__
+- the default database used is named ``morre`` (run-parameter ``--env "NEO4J_dbms_active__database=morre"`` )
+
+.. WARNING:: by default the server is not secured at all
+
+    - Authentication is disabled (run-parameter ``--env "NEO4J_AUTH=none"``)
+
 
 Usage
 =====
 
 Call the ``🏃 server-integration/run-neo4j-server.sh`` after running the *jar-builder*  to setup and start the neo4j server with the masymos morre plugin.
+Use the parameter ``rebuild`` to force a rebuild of the image.
 
 An empty docker volume ``masymos_neo4j_database`` is created as new neo4j database. If you want to use an existing database, please see :ref:`docker_using_own_volume`.
-
 The docker volume for the neo4j database is not removed automatically, use ``🏃 cleanup.sh`` for that.
+
+If you like to see the neo4j logs directly after starting the container, use this command:
+    :c_bash:`./run-neo4j-server.sh && docker logs -f masymos_neo4j`
 
 .. _docker_using_own_volume:
 
