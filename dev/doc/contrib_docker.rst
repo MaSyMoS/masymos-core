@@ -76,7 +76,6 @@ Server Integration
 
     - Authentication is disabled (run-parameter ``--env "NEO4J_AUTH=none"``)
 
-
 Usage
 =====
 
@@ -108,12 +107,11 @@ If you have an existing neo4j database, there are two selutions using it with th
 Copy your database into the docker volume
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. find and open the file ``🏃 server-integration/copy_own_data_into_docker_volume.sh``
-#. insert the location of your local database
+#. find the file ``🏃 server-integration/copy_own_data_into_docker_volume.sh`` and the location of your local database
     - please note, that you need to use the database folder named after your database, not the neo4j-databases-root
     - your database is a named folder inside a folder called ``databases``
-#. run the script
-    - you may check the UID/GID
+#. run the script with :c_bash:`$ ./copy_own_data_into_docker_volume.sh /path/to/neo4j/databases/my_database`
+    - you may check the UID/GID (should be YOUR ids)
     - you may check the size of the created volume
 
 Mount a local volume in user space
@@ -153,5 +151,4 @@ Folder and Storage Overview
                 - build image
             #. run docker container ``masymos_neo4j`` in detached mode and remove it afterwards
             #. output non-success docker return codes
-
 

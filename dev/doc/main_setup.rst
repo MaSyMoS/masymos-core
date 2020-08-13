@@ -44,7 +44,12 @@ Setup Server with Docker
 The easiest way of using the MaSyMoS Morre Neo4J Plugin is to use `our MaSyMos-Docker-Project <https://github.com/MaSyMoS/masymos-docker>`__.
 
 #. clone the repository
-#. find detailed usage information on the documentation page :ref:`contrib_docker`.
+#. copy your local database into a docker volume with :c_bash:`$ ./server-integration/copy_own_data_into_docker_volume.sh /path/to/neo4j/databases/my_database`
+#. run the server with ``server-integration/run-neo4j-server.sh``
+
+Find detailed usage information on the documentation page :ref:`contrib_docker`.
+
+Find the instructions on how to use masymos morre in the :ref:`use_morre`.
 
 Setup Server locally
 ====================
