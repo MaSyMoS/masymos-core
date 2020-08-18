@@ -29,6 +29,7 @@ Table of Content
 
     main_overview
     main_setup
+    docs_docker
 
 .. toctree::
     :caption: How to use MaSyMoS
@@ -43,7 +44,6 @@ Table of Content
 
     contrib_main
     contrib_start
-    contrib_docker
     contrib_rtfd
 
 License

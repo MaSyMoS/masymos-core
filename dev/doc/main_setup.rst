@@ -24,7 +24,7 @@ The easiest way of creating the MaSyMoS-jar-files is to use `our MaSyMos-Docker-
 #. run the ``jar-builder/maven-build-masymos-jars.sh`` bash file
 #. find all jar files in `jar-builder/masymos-builds`
 
-Find further information on the docker repository and how to tweak it on the documentation page :ref:`contrib_docker`.
+Find further information on the docker repository and how to tweak it on the documentation page :ref:`docs_docker`.
 
 Build Jar files locally
 =======================
@@ -47,7 +47,7 @@ The easiest way of using the MaSyMoS Morre Neo4J Plugin is to use `our MaSyMos-D
 #. copy your local database into a docker volume with :c_bash:`$ ./server-integration/copy_own_data_into_docker_volume.sh /path/to/neo4j/databases/my_database`
 #. run the server with ``server-integration/run-neo4j-server.sh``
 
-Find detailed usage information on the documentation page :ref:`contrib_docker`.
+Find detailed usage information on the documentation page :ref:`docs_docker`.
 
 Find the instructions on how to use masymos morre in the :ref:`use_morre`.
 

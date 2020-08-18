@@ -1,4 +1,4 @@
-.. _contrib_docker:
+.. _docs_docker:
 
 ********************
 Docker Documentation
