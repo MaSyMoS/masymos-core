@@ -37,6 +37,7 @@ Table of Content
 
     use_cli
     use_morre
+    use_troubleshooting
 
 .. toctree::
     :caption: Contribution and Development

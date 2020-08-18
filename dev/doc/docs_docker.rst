@@ -7,6 +7,7 @@ Docker Documentation
 .. include:: rst_directives.rst
 
 .. contents:: 
+    :local:
 
 Meta
 ####

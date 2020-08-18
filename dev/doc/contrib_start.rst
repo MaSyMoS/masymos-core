@@ -7,6 +7,7 @@ Getting Started
 .. include:: rst_directives.rst
 
 .. contents:: 
+    :local:
 
 Installation of MaSyMoS Development Environment
 ###############################################

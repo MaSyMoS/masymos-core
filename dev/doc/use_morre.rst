@@ -15,6 +15,7 @@ For this showcase we use cURL, however feel free to use any tool able to handle 
 Please make sure, you did everything explained in the :ref:`main_setup` before starting to try something locally.
 
 .. contents:: 
+    :local:
 
 Query
 #####

@@ -6,6 +6,7 @@ Contributing
 
 .. contents:: 
     :depth: 4
+    :local:
 
 Documentation
 #############

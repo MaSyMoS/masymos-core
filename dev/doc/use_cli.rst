@@ -5,6 +5,7 @@ CLI
 ***
 
 .. contents:: 
+    :local:
 
 MainExtractor
 #############
