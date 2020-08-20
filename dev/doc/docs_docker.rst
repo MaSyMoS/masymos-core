@@ -12,7 +12,9 @@ Docker Documentation
 Meta
 ####
 
-The file ``🏃 cleanup.sh`` in the root directory cleans up all resources, the masymos scripts created on your system (like images, containers, volumes,…).
+- The file ``🏃 cleanup.sh`` in the root directory
+    - cleans up all docker resources, the masymos scripts created on your system (like images, containers, volumes,…).
+    - cloned repositories in ``📂 jar-builder/masymos-source`` or built jars in ``📂 jar-builder/masymos-builds`` are not affected.
 
 Jar-Builder
 ###########
@@ -56,6 +58,7 @@ Folder and Storage Overview
             #. clone masymos repositories (master), if they are missing
             #. create maven artifacts volume ``masymos_maven_artifacts``, if missing
             #. build docker image ``masymos-jar-builder``, if missing or if parameter ``rebuild`` is set
+            #. on Windows-Systems (git-bash or cygwin) the script needs to edit the volume paths for docker - for debugging reasons these paths are written to the output (see ``OSTYPE``)
             #. run docker container ``masymos-jar-builder`` and remove it afterwards
             #. output non-success docker return codes
 
@@ -111,6 +114,7 @@ Copy your database into the docker volume
 #. find the file ``🏃 server-integration/copy_own_data_into_docker_volume.sh`` and the location of your local database
     - please note, that you need to use the database folder named after your database, not the neo4j-databases-root
     - your database is a named folder inside a folder called ``databases``
+    - example: ``/home/ulf/database-engine/neo4j/data/databases/my_db``
 #. run the script with :c_bash:`$ ./copy_own_data_into_docker_volume.sh /path/to/neo4j/databases/my_database`
     - you may check the UID/GID (should be YOUR ids)
     - you may check the size of the created volume
