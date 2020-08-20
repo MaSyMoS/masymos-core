@@ -12,9 +12,17 @@ Docker Documentation
 Meta
 ####
 
-- The file ``🏃 cleanup.sh`` in the root directory
-    - cleans up all docker resources, the masymos scripts created on your system (like images, containers, volumes,…).
-    - cloned repositories in ``📂 jar-builder/masymos-source`` or built jars in ``📂 jar-builder/masymos-builds`` are not affected.
+The file ``cleanup.sh``
+==========================
+
+The file ``🏃 cleanup.sh`` in the root directory cleans up all docker resources, the masymos scripts created on your system (like images, containers, volumes,…).
+
+Cloned repositories in ``📂 jar-builder/masymos-source`` or built jars in ``📂 jar-builder/masymos-builds`` are not affected.
+
+Using the bash-files on Windows
+===============================
+
+If you're using Windows, please run the bash files with `git-bash <https://gitforwindows.org/>`__ or `Cygwin <https://www.cygwin.com/>`__. If you face any problems, please contact us via GitHub and provide the whole output of the script.
 
 Jar-Builder
 ###########
