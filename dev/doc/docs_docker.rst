@@ -24,6 +24,11 @@ Using the bash-files on Windows
 
 If you're using Windows, please run the bash files with `git-bash <https://gitforwindows.org/>`__ or `Cygwin <https://www.cygwin.com/>`__. If you face any problems, please contact us via GitHub and provide the whole output of the script.
 
+Blank page of neo4j web interface on localhost:7474
+===================================================
+
+This can happen, if your browser tries to load something from chache. Try to avoid chache by reloading the page with ``Ctrl+F5``.
+
 Jar-Builder
 ###########
 
@@ -35,9 +40,18 @@ Usage
 Call the ``🏃 jar-builder/maven-build-masymos-jars.sh`` to create the jar files and library folder automatically.
 Use the parameter ``rebuild`` to force a rebuild of the image.
 
-If you want a different version then the ``master`` of the repositories, please check them out manually in the folder ``📂 jar-builder/masymos-source``
+If you want a different version then the ``master`` of the repositories, please check them out manually in the folder ``📂 jar-builder/masymos-source``.
 
 On the first run of the docker container, maven will download all dependencies and saves them to a docker volume. So it may take some time.
+
+Find the generated jar-files in ``📂 jar-builder/masymos-builds``:
+
+    - 📃 masymos-cli-1.0.2.jar
+        - the MaSyMoS Cli as fat jar with all dependencies
+    - 📃 masymos-morre-1.0.2.jar
+        - the MaSyMoS Morre thin jar
+    - 📃 original-masymos-cli-1.0.2.jar
+        - the MaSyMoS Cli as thin jar without all dependencies
 
 The docker volume for the maven dependencies is not removed automatically, use ``🏃 cleanup.sh`` for that.
 
