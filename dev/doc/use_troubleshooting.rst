@@ -10,8 +10,11 @@ Troubleshooting
     :local:
     :depth: 1
 
-Windows: Problems with line breaks; bash scripts are not running
-################################################################
+Windows
+#######
+
+Problems with line breaks; bash scripts are not running
+=======================================================
 
 - Error-Messages
     - something like ``cannot find  env bash\r``
@@ -36,7 +39,7 @@ Windows: Problems with line breaks; bash scripts are not running
     - check out repositories without changes and only use editors, that preserve the Unix-line-breaks, like Notepad++, Atom, IntelliJ or Eclipse (you may need to configure it in some cases)
 
 Solution
-========
+--------
 
 - you have to preserve the LF, please do not use CRLF - do not use Windows Notepad…; this means:
     - ``core.autocrlf=input``
@@ -72,3 +75,11 @@ Solution
         #. delete all files in the directory except ".git" (this directory may be hidden)
         #. right click on the now empty directory, TortoiseGit -> Revert
         #. files are pulled again, containing only Unix line-breaks
+
+Neo4J
+#####
+
+Blank page of neo4j web interface on localhost:7474
+===================================================
+
+This can happen, if your browser tries to load something from cache. Try to avoid cache by reloading the page with ``Ctrl+F5`` or disable the cache in your browser.

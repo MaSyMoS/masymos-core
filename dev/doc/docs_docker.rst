@@ -22,12 +22,11 @@ Cloned repositories in ``ðŸ“‚ jar-builder/masymos-source`` or built jars in ``ðŸ
 Using the bash-files on Windows
 ===============================
 
-If you're using Windows, please run the bash files with `git-bash <https://gitforwindows.org/>`__ or `Cygwin <https://www.cygwin.com/>`__. If you face any problems, please contact us via GitHub and provide the whole output of the script.
-
-Blank page of neo4j web interface on localhost:7474
-===================================================
-
-This can happen, if your browser tries to load something from chache. Try to avoid chache by reloading the page with ``Ctrl+F5``.
+- please run the bash files with `git-bash <https://gitforwindows.org/>`__ or `Cygwin <https://www.cygwin.com/>`__. If you face any problems, please contact us via GitHub and provide the whole output of the script.
+- provide paths in parameters in one of the following formats:
+    - ``C:/my/path``
+    - ``"C:\my\path"``
+    - ``/c/my/path``
 
 Jar-Builder
 ###########
