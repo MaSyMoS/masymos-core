@@ -1,6 +1,6 @@
 @startuml
 
-title MaSyMoS - //command line interface// mode
+title MaSyMoS - //Model Ranked Retrieval Engine// mode
 header version: %date("dd.MM.yyyy")
 'header version: 23.11.2018
 

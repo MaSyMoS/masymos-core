@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="593px" preserveAspectRatio="none" style="width:682px;height:593px;" version="1.1" viewBox="0 0 682 593" width="682px" zoomAndPan="magnify">
+    <defs />
+    <g><text fill="#888888" font-family="Helvetica" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="95" x="569.5" y="9.2822">version: 28.08.2020</text><text fill="#000000" font-family="Helvetica" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="165" x="79.75" y="28.3486">MaSyMoS docker -</text><text fill="#000000" font-family="Helvetica" font-size="18" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="278" x="250.75" y="28.3486">Model Ranked Retrieval Engine</text><text fill="#000000" font-family="Helvetica" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="50" x="534.75" y="28.3486">mode</text>
+        <!--MD5=[508240eeacbe0e9093178647d3e8c5bd]
+cluster d_neo4j-->
+        <rect fill="#CCCCFF" height="407" style="stroke: #000000; stroke-width: 1.5;" width="570" x="53" y="175.5938" />
+        <rect fill="#CCCCFF" height="10" style="stroke: #000000; stroke-width: 1.5;" width="15" x="603" y="180.5938" />
+        <rect fill="#CCCCFF" height="2" style="stroke: #000000; stroke-width: 1.5;" width="4" x="601" y="182.5938" />
+        <rect fill="#CCCCFF" height="2" style="stroke: #000000; stroke-width: 1.5;" width="4" x="601" y="186.5938" /><text fill="#000000" font-family="Helvetica" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="136" x="270" y="201.5889">«docker-container»</text><text fill="#000000" font-family="Helvetica" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="125" x="275.5" y="217.8857">masymos_neo4j</text>
+        <!--MD5=[f5e261d42dab2607815951219eaa4ec7]
+cluster n-->
+        <polygon fill="#FFFFFF" points="77,244.5938,87,234.5938,599,234.5938,599,548.5938,589,558.5938,77,558.5938,77,244.5938" style="stroke: #000000; stroke-width: 1.5;" />
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="589" x2="599" y1="244.5938" y2="234.5938" />
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="77" x2="589" y1="244.5938" y2="244.5938" />
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="589" x2="589" y1="244.5938" y2="558.5938" /><text fill="#000000" font-family="Helvetica" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="137" x="265.5" y="260.5889">Neo4j Webserver</text>
+        <!--MD5=[ef45e87e7df6b22eda94fc7245ec73a6]
+cluster n_run-->
+        <rect fill="#FFCCAA" height="180" style="stroke: #000000; stroke-width: 1.5;" width="458" x="109" y="290.5938" /><text fill="#000000" font-family="Helvetica" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="115" x="280.5" y="305.5889">Neo4j-Runtime</text>
+        <!--MD5=[8445962673bbca98f841a9524d408086]
+cluster /lib/ext-->
+        <polygon fill="#CCCCCC" points="359,341.5938,418,341.5938,425,363.8906,535,363.8906,535,438.5938,359,438.5938,359,341.5938" style="stroke: #000000; stroke-width: 1.5;" />
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="359" x2="425" y1="363.8906" y2="363.8906" /><text fill="#000000" font-family="Helvetica" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="53" x="363" y="356.5889">/lib/ext</text>
+        <!--MD5=[818e71299f32c045a708366106517ca0]
+cluster /plugins-->
+        <polygon fill="#CCCCCC" points="149,341.5938,217,341.5938,224,363.8906,335,363.8906,335,438.5938,149,438.5938,149,341.5938" style="stroke: #000000; stroke-width: 1.5;" />
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="149" x2="224" y1="363.8906" y2="363.8906" /><text fill="#000000" font-family="Helvetica" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="62" x="153" y="356.5889">/plugins</text>
+        <!--MD5=[3b93063a3927901e04f190caef2b6fa5]
+cluster d_db-->
+        <rect fill="#CCCCFF" height="112" style="stroke: #000000; stroke-width: 1.5;" width="220" x="7" y="39.5938" />
+        <rect fill="#CCCCFF" height="10" style="stroke: #000000; stroke-width: 1.5;" width="15" x="207" y="44.5938" />
+        <rect fill="#CCCCFF" height="2" style="stroke: #000000; stroke-width: 1.5;" width="4" x="205" y="46.5938" />
+        <rect fill="#CCCCFF" height="2" style="stroke: #000000; stroke-width: 1.5;" width="4" x="205" y="50.5938" /><text fill="#000000" font-family="Helvetica" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="122" x="56" y="65.5889">«docker-volume»</text><text fill="#000000" font-family="Helvetica" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="204" x="15" y="81.8857">masymos_neo4j_database</text>
+        <!--MD5=[e2307af040e3f87d22824e7603ca28ec]
+entity api-->
+        <ellipse cx="345" cy="533.5938" fill="#FEFECE" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;" /><text fill="#000000" font-family="Helvetica" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="65" x="312.5" y="563.5889">Neo4j API</text>
+        <!--MD5=[0d482ad21d5c7c11aa976e45da5ecfe6]
+entity core-->
+        <rect fill="#FEFECE" height="46.2969" style="stroke: #A80036; stroke-width: 1.5;" width="144" x="375" y="376.5938" />
+        <rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="499" y="381.5938" />
+        <rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="497" y="383.5938" />
+        <rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="497" y="387.5938" /><text fill="#000000" font-family="Helvetica" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="104" x="390" y="409.5889">masymos_core</text>
+        <!--MD5=[b7c9315c4bf9274dc571d57c8e59f313]
+entity morre-->
+        <rect fill="#FEFECE" height="46.2969" style="stroke: #A80036; stroke-width: 1.5;" width="154" x="165" y="376.5938" />
+        <rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="299" y="381.5938" />
+        <rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="297" y="383.5938" />
+        <rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="297" y="387.5938" /><text fill="#000000" font-family="Helvetica" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="114" x="180" y="409.5889">masymos_morre</text>
+        <!--MD5=[9fd9ce6e4692a8f91202a3db3dd67be0]
+entity n_db-->
+        <path d="M51.5,100.5938 C51.5,90.5938 117,90.5938 117,90.5938 C117,90.5938 182.5,90.5938 182.5,100.5938 L182.5,125.8906 C182.5,135.8906 117,135.8906 117,135.8906 C117,135.8906 51.5,135.8906 51.5,125.8906 L51.5,100.5938 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;" />
+        <path d="M51.5,100.5938 C51.5,110.5938 117,110.5938 117,110.5938 C117,110.5938 182.5,110.5938 182.5,100.5938 " fill="none" style="stroke: #000000; stroke-width: 1.5;" /><text fill="#000000" font-family="Helvetica" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="111" x="61.5" y="127.5889">Neo4j-Database</text>
+        <!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user-->
+        <ellipse cx="655" cy="504.0938" fill="#FEFECE" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;" />
+        <path d="M655,512.0938 L655,539.0938 M642,520.0938 L668,520.0938 M655,539.0938 L642,554.0938 M655,539.0938 L668,554.0938 " fill="none" style="stroke: #A80036; stroke-width: 1.5;" /><text fill="#000000" font-family="Helvetica" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="31" x="639.5" y="569.5889">user</text>
+        <!--MD5=[0540b530943743388c0ed88408b6c443]
+link morre to core-->
+        <path d="M319.275,399.5938 C336.005,399.5938 352.734,399.5938 369.464,399.5938 " fill="none" id="morre-to-core" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="374.656,399.5938,365.656,395.5938,369.656,399.5938,365.656,403.5938,374.656,399.5938" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--MD5=[a6b3379c9624f4b32db69cb8215cba8b]
+reverse link n_db to n_run-->
+        <path d="M117,141.1787 C117,158.6597 117,183.1172 117,210.0611 C117,223.533 117,237.6265 117,251.7803 C117,258.8572 117,265.9492 117,272.9861 C117,276.5045 117,280.0092 117,283.4913 C117,285.2324 117,286.9679 117,288.6966 C117,289.1287 117,289.5605 117,289.9918 " fill="none" id="n_db-backto-n_run" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="117,135.9457,113,144.9457,117,140.9457,121,144.9457,117,135.9457" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--MD5=[eed42036796bc23e243fb29742cdc548]
+link n_run to api-->
+        <path d="M136.018,470.876 C136.3456,471.4076 136.6789,471.9354 137.0178,472.4589 C137.6957,473.506 138.3966,474.5364 139.121,475.5475 C142.019,479.5919 145.2955,483.3279 149,486.5938 C177.709,511.9036 300.737,527.5739 335.7,531.575 " fill="none" id="n_run-api" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--MD5=[171bbbeb97f5c35b5c0d3208ac28312a]
+link user to api-->
+        <path d="M639.425,533.5938 C545.983,533.5938 452.54,533.5938 359.098,533.5938 " fill="none" id="user-to-api" style="stroke: #A80036; stroke-width: 1.0;" />
+        <polygon fill="#A80036" points="354.082,533.5938,363.082,537.5938,359.082,533.5938,363.082,529.5938,354.082,533.5938" style="stroke: #A80036; stroke-width: 1.0;" />
+        <!--MD5=[f22c6c75fb0ede8e9c5260542b339aca]
+@startuml
+
+title MaSyMoS docker - //Model Ranked Retrieval Engine// mode
+header version: %date("dd.MM.yyyy")
+'header version: 23.11.2018
+
+skinparam defaultFontName Helvetica
+
+skinparam shadowing false
+
+component "masymos_neo4j" as d_neo4j <<docker-container>> #ccf {
+    node "Neo4j Webserver" as n #fff {
+        interface "Neo4j API" as api
+    	rectangle "Neo4j-Runtime" as n_run #ffccaa {
+            folder "/lib/ext" #cccccc {
+                component "masymos_core" as core
+            }
+            folder "/plugins" #cccccc {
+                component "masymos_morre" as morre
+            }
+            morre -> core
+        }
+    }
+}
+
+component "masymos_neo4j_database" as d_db <<docker-volume>> #ccf {
+    database "Neo4j-Database" as n_db
+}
+
+actor "user" as user
+
+n_run   -u->      n_db
+n_run   - -      api
+user    ->      api
+
+@enduml
+
+@startuml
+
+title MaSyMoS docker - //Model Ranked Retrieval Engine// mode
+header version: 28.08.2020
+
+skinparam defaultFontName Helvetica
+
+skinparam shadowing false
+
+component "masymos_neo4j" as d_neo4j <<docker-container>> #ccf {
+    node "Neo4j Webserver" as n #fff {
+        interface "Neo4j API" as api
+    	rectangle "Neo4j-Runtime" as n_run #ffccaa {
+            folder "/lib/ext" #cccccc {
+                component "masymos_core" as core
+            }
+            folder "/plugins" #cccccc {
+                component "masymos_morre" as morre
+            }
+            morre -> core
+        }
+    }
+}
+
+component "masymos_neo4j_database" as d_db <<docker-volume>> #ccf {
+    database "Neo4j-Database" as n_db
+}
+
+actor "user" as user
+
+n_run   -u->      n_db
+n_run   - -      api
+user    ->      api
+
+@enduml
+
+PlantUML version 1.2020.16(Sun Aug 23 22:20:43 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>

@@ -101,6 +101,8 @@ Server Integration
 
     - Authentication is disabled (run-parameter ``--env "NEO4J_AUTH=none"``)
 
+.. image:: ../uml/structure_docker_morre.svg
+
 Usage
 =====
 

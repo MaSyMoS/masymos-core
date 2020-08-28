@@ -39,11 +39,11 @@
        lengthAdjust="spacingAndGlyphs"
        font-size="10"
        font-family="Helvetica"
-       fill="#888888">version: 19.06.2020</text>
+       fill="#888888">version: 28.08.2020</text>
     <text
        id="text6"
        y="28.3486"
-       x="114"
+       x="80"
        textLength="99"
        lengthAdjust="spacingAndGlyphs"
        font-size="18"
@@ -52,17 +52,17 @@
     <text
        id="text8"
        y="28.3486"
-       x="219"
-       textLength="210"
+       x="185"
+       textLength="278"
        lengthAdjust="spacingAndGlyphs"
        font-style="italic"
        font-size="18"
        font-family="Helvetica"
-       fill="#000000">command line interface</text>
+       fill="#000000">Model Ranked Retrieval Engine</text>
     <text
        id="text10"
        y="28.3486"
-       x="435"
+       x="469"
        textLength="50"
        lengthAdjust="spacingAndGlyphs"
        font-size="18"
@@ -73,13 +73,18 @@
        id="polygon12"
        style="fill:#ffffff;stroke:#000000;stroke-width:1.5"
        points="531,292.0938 14,292.0938 14,59.0938 24,49.0938 541,49.0938 541,282.0938 " />
+    <path
+       style="stroke: #A80036; stroke-width: 1.0;"
+       id="n_run-n_db"
+       fill="none"
+       d="M180.9779,153.0938 C180.9396,153.0938 180.9012,153.0938 180.8629,153.0938 C180.7863,153.0938 180.7096,153.0938 180.633,153.0938 C180.4797,153.0938 180.3264,153.0938 180.1731,153.0938 C179.8664,153.0938 179.5598,153.0938 179.2532,153.0938 C178.64,153.0938 178.0268,153.0938 177.4136,153.0938 C176.1872,153.0938 174.9608,153.0938 173.7344,153.0938 C168.8287,153.0938 163.9231,153.0938 159.0174,153.0938 " />
     <line
        id="line14"
        y2="50.0938"
        y1="59.0938"
        x2="540"
        x1="531"
-       style="stroke: #000000; stroke-width: 1.5;" />
+       style="stroke:#000000;stroke-width:1.5" />
     <line
        id="line16"
        y2="59.0938"
@@ -89,11 +94,11 @@
        style="stroke: #000000; stroke-width: 1.5;" />
     <line
        id="line18"
-       y2="292.0938"
+       y2="292.09381"
        y1="59.0938"
        x2="531"
        x1="531"
-       style="stroke: #000000; stroke-width: 1.5;" />
+       style="stroke:#000000;stroke-width:1.5" />
     <text
        id="text20"
        y="75.0889"
@@ -112,6 +117,11 @@
        width="352"
        style="fill:#ffccaa;stroke:#000000;stroke-width:1.5"
        height="106" />
+    <polygon
+       id="polygon74"
+       style="stroke: #A80036; stroke-width: 1.0;"
+       points="153.8867,153.0938,162.8867,157.0938,158.8867,153.0938,162.8867,149.0938,153.8867,153.0938"
+       fill="#A80036" />
     <text
        style="font-weight:bold;font-size:14px;font-family:Helvetica;fill:#000000"
        transform="translate(-10)"
@@ -302,15 +312,6 @@
        style="fill:#a80036;stroke:#a80036;stroke-width:1"
        points="383.6517,149.0938 387.6517,153.0938 383.6517,157.0938 392.6517,153.0938 " />
     <!--link n_run to n_db-->
-    <path
-       style="fill:none;stroke:#a80036;stroke-width:1"
-       id="n_run-n_db"
-       d="m 170.9779,153.0938 h -0.115 -0.2299 -0.4599 -0.9199 -1.8396 -3.6792 -4.717" />
-    <polygon
-       id="polygon74"
-       style="stroke: #A80036; stroke-width: 1.0;"
-       points="153.8867,153.0938,162.8867,157.0938,158.8867,153.0938,162.8867,149.0938,153.8867,153.0938"
-       fill="#A80036" />
     <!--link n_run to api-->
     <path
        style="stroke: #A80036; stroke-width: 1.0;"
@@ -331,8 +332,8 @@
     <!--
 @startuml
 
-title MaSyMoS - //command line interface// mode
-header version: 19.06.2020
+title MaSyMoS - //Model Ranked Retrieval Engine// mode
+header version: 28.08.2020
 
 skinparam defaultFontName Helvetica
 
@@ -367,9 +368,9 @@ PlantUML version 1.2019.07(Mon Jun 24 21:59:20 CEST 2019)
 (GPL source distribution)
 Java Runtime: OpenJDK Runtime Environment
 JVM: OpenJDK 64-Bit Server VM
-Java Version: 11.0.7+10-post-Ubuntu-2ubuntu218.04
+Java Version: 11.0.8+10-post-Ubuntu-0ubuntu118.04.1
 Operating System: Linux
-OS Version: 5.3.0-59-generic
+OS Version: 5.4.0-42-generic
 Default Encoding: UTF-8
 Language: en
 Country: US
