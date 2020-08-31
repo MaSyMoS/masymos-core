@@ -25,6 +25,7 @@ MainExtractor
     ``-quiet``, boolean, false, false, "rewires the stdOut to dev0, faster but no debugging"
     ``-noAnno``, boolean, false, false, "creates only the model structures but does not resolve and index model annotations"
     ``-annoOnly``, boolean, false, false, "creates only the annotation index"
+    ``-fileMode``, boolean, false, false, "lst-file, if parameter not given"
 
 - The arguments ``-noAnno`` and ``-annoOnly`` can not be used together, obviously.
 - If ``-annoOnly`` is provided all other parameters except for ``-dbPath`` are ignored.
