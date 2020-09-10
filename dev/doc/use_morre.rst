@@ -54,9 +54,16 @@ a detailed description is provided for each entry point, all following allow ``t
 http://yourServer:7474/morre/model_update_service/
 ==================================================
 
-- ``add_model/`` adds a model to the database, takes the parameters ``fileId, url, modelType[SBML|CELLML|SEDML]``, fileId a user defined name, url is an accessible location to load the model and ``modelType`` defines the encoding, loading OWL is not provided in server mode, this method returns a ``uID`` as result
-- ``delete_model/`` removes a model from the database, takes the ``uID`` generated during ``add_model/`` as input, input of ``fileID`` is optional and used to double-check
-- ``create_annotation_index/`` by default no annotation index is generated in server mode when adding a model, takes the parameter ``dropExistingIndex true|false`` to decide if the annotation index should be deleted or updated
+- ``add_model/`` adds a model to the database, takes the parameters:
+    - ``fileId`` a user defined name
+    - ``url`` is an accessible location to load the model
+    - ``modelType[SBML|CELLML|SEDML]`` defines the encoding, loading OWL is not provided in server mode
+    - this method returns a ``uID`` as result
+- ``delete_model/`` removes a model from the database, parameters:
+    - ``uID`` generated during ``add_model/``
+    - ``fileID`` is optional and used to double-check
+- ``create_annotation_index/`` by default no annotation index is generated in server mode when adding a model, parameters:
+    - ``dropExistingIndex true|false`` to decide if the annotation index should be deleted or updated
 
 Examples
 ########
