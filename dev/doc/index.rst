@@ -15,6 +15,11 @@ Source Code, Feedback and Contribution
 - 📝 Read open issues or `create new ones for feature requests and bugs <https://github.com/MaSyMoS/masymos-core/issues>`__.
 - 🔧 Contribute to the project after reading the :ref:`contrib_main`.
 
+Modules
+=======
+
+- `MaSeMiWa - MaSyMoS SEEK middleware <http://masemiwa.rtfd.io/>`__
+
 Table of Content
 ################
 

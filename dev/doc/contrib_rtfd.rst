@@ -27,3 +27,9 @@ Steps to reproduce procedure
     - active true
 
 #. check for 200 on RTD
+
+Configuration
+#############
+
+- Add Maintainers (Admin → Maintainers)
+- Disable paid advertising (Admin → Advertising)
