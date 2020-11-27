@@ -17,8 +17,8 @@ Please make sure, you did everything explained in the :ref:`main_setup` before s
 .. contents:: 
     :local:
 
-Query
-#####
+Querys
+######
 
 The plugin offers the following entry points:
 
@@ -67,6 +67,23 @@ http://yourServer:7474/morre/model_update_service/
 
 Examples
 ########
+
+Insert, Delete
+==============
+
+.. code-block:: bash
+
+    # add_model
+    curl -X POST http://localhost:7474/morre/model_update_service/add_model -H "Content-Type: application/json" -d '{"fileId":"testId", "url":"https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000196.2?filename=BIOMD0000000196_url.xml","modelType":"SBML"}'
+    > {"uID":"1","ok":"true","url":"https://www.ebi.ac.uk/biomodels/model/download/BIOMD0000000196.2?filename\u003dBIOMD0000000196_url.xml","fileId":"testId"}
+
+    # create_annotation_index
+    curl -X POST http://localhost:7474/morre/model_update_service/create_annotation_index -H "Content-Type: application/json" -d '{"dropExistingIndex":"true"}'
+    > {"ok":"true"}
+
+    # delete_model
+    curl -X POST http://localhost:7474/morre/model_update_service/delete_model -H "Content-Type: application/json" -d '{"uID":"1"}'
+    > {"uID":"1","nodes deleted":"136","relations deleted":"382","successful":"true"}
 
 Basic Query
 ===========
