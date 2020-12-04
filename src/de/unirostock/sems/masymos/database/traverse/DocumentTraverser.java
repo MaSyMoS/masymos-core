@@ -9,6 +9,7 @@ import org.neo4j.graphdb.Label;
 import org.neo4j.graphdb.MultipleFoundException;
 import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.ResourceIterator;
+import org.neo4j.graphdb.Result;
 import org.neo4j.graphdb.Transaction;
 import org.apache.log4j.Logger;
 
@@ -37,6 +38,27 @@ public class DocumentTraverser {
 		}
 		return node;
 	}
+	
+	public static List<Long> getDocumentUIDsByFileId(String fileID) {
+		List<Long> resultList = new LinkedList<Long>();
+		try (Transaction tx = graphDB.beginTx()){
+
+	   	        Result result = graphDB.execute("MATCH (d:"+NodeLabel.Types.DOCUMENT.toString()+") "
+	   	        				+ "WHERE (d." + Property.General.FILEID + " STARTS WITH \""+fileID+"\") "
+	   	        				+ "return d." + Property.General.UID + " AS uid");
+	   	        ResourceIterator<Long> iLca = result.columnAs("uid");
+	            while (iLca.hasNext()) {
+	            	resultList.add(iLca.next()) ;
+	            }
+			
+			tx.success();
+		} catch (Exception e) {
+			logger.error(e.getMessage());
+			return null;
+		}
+		return resultList;
+	}
+	
 
 	public static List<Node> getAllNodesWithLabel(Label label) {
 		List<Node> nodes = new LinkedList<Node>();

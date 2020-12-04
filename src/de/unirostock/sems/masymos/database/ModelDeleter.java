@@ -90,23 +90,27 @@ public class ModelDeleter {
 	public static Map<String, String> deleteDocument(String fileId, Long uID){
 		HashMap<String, String> msg = new HashMap<String, String>();
 		if (StringUtils.isBlank(fileId) || uID == null || uID < 0) {
-			msg.put("Exception", "No parameter can be NULL or empty and uID can not be zero or less");
+			msg.put("message", "No parameter can be NULL or empty and uID can not be zero or less");
+			msg.put("ok", "false");
 			return msg;
 		}
 		Node doc = DocumentTraverser.getDocumentByUID(uID);
 		if (doc==null) {
-			msg.put("document not found", "No document with UID " + uID.toString());
+			msg.put("message", "No document with UID " + uID.toString());
+			msg.put("ok", "false");
 			return msg;
 		}
 		try (Transaction tx = graphDB.beginTx()){
-			if (StringUtils.equals((String) doc.getProperty(Property.General.FILEID, ""), fileId)) {
-				msg.put("fileId not found", "fileId " + fileId + " does not match for uID " + uID.toString() );
+			if (!StringUtils.equals((String) doc.getProperty(Property.General.FILEID, ""), fileId)) {
+				msg.put("message", "fileId " + fileId + " does not match for uID " + uID.toString() );
+				msg.put("ok", "false");
 				return msg;
 			}
 			tx.success();
 		} catch (Exception e) {
 			logger.error(e.getMessage());
-			msg.put("Error" , e.getMessage());
+			msg.put("message" , e.getMessage());
+			msg.put("ok", "false");
 			return msg;
 		}				
 		return doDelete(uID);
@@ -116,28 +120,33 @@ public class ModelDeleter {
 	public static Map<String, String> deleteDocument(String fileId, String versionId, Long uID){
 		HashMap<String, String> msg = new HashMap<String, String>();
 		if (StringUtils.isBlank(fileId) || StringUtils.isBlank(versionId) || uID == null || uID < 0) {
-			msg.put("Exception", "No parameter can be NULL or empty and uID can not be zero or less");
+			msg.put("message", "No parameter can be NULL or empty and uID can not be zero or less");
+			msg.put("ok", "false");
 			return msg;
 		}
 		Node doc = DocumentTraverser.getDocumentByUID(uID);
 		if (doc==null) {
-			msg.put("document not found", "No document with UID " + uID.toString());
+			msg.put("message", "No document with UID " + uID.toString());
+			msg.put("ok", "false");
 			return msg;
 		}
 		
 		try (Transaction tx = graphDB.beginTx()){
 			if (StringUtils.equals((String) doc.getProperty(Property.General.FILEID, ""), fileId)) {
-				msg.put("fileId not found", "fileId " + fileId + " does not match for uID " + uID.toString() );
+				msg.put("message", "fileId " + fileId + " does not match for uID " + uID.toString() );
+				msg.put("ok", "false");
 				return msg;
 			}
 			if (StringUtils.equals((String) doc.getProperty(Property.General.VERSIONID, ""), versionId)) {
-				msg.put("versionId not found", "versionId " + versionId + " does not match for uID " + uID.toString() + "and fileId " + fileId );
+				msg.put("message", "versionId " + versionId + " does not match for uID " + uID.toString() + "and fileId " + fileId );
+				msg.put("ok", "false");
 				return msg;
 			}
 			tx.success();
 		} catch (Exception e) {
 			logger.error(e.getMessage());
-			msg.put("Error" , e.getMessage());
+			msg.put("message" , e.getMessage());
+			msg.put("ok", "false");
 			return msg;
 		}
 		return doDelete(uID);		
@@ -146,18 +155,55 @@ public class ModelDeleter {
 	public static Map<String, String> deleteDocument(Long uID){
 		HashMap<String, String> msg = new HashMap<String, String>();
 		if (uID==null || uID < 0) {
-			msg.put("Exception", "UID can not be NULL or negative!");
+			msg.put("message", "UID can not be NULL or negative!");
+			msg.put("ok", "false");
 			return msg;
 		}
 		
 		Node doc = DocumentTraverser.getDocumentByUID(uID);
 		if (doc==null) {
-			msg.put("document not found", "No document with UID " + uID.toString());
+			msg.put("message", "No document with UID " + uID.toString());
+			msg.put("ok", "false");
 			return msg;
 		}
 		return doDelete(uID);
 	}	
 		
+	
+	public static Map<String, String> deleteDocumentByFileID(String fileId){
+		HashMap<String, String> msg = new HashMap<String, String>();
+		if (StringUtils.isBlank(fileId)) {
+			msg.put("message", "FileId parameter can not be NULL or empty!");
+			msg.put("ok", "false");
+			return msg;
+		}
+		List<Long> uIDList = DocumentTraverser.getDocumentUIDsByFileId(fileId);
+		if (uIDList.isEmpty()) {
+			msg.put("message", "No document(s) with this fileId: " + fileId);
+			msg.put("ok", "false");
+			return msg;
+		}
+		
+		Map<String, String> deleteInfo = null;
+		boolean allDone = true;
+		for (Iterator<Long> iterator = uIDList.iterator(); iterator.hasNext();) {
+			Long uID = (Long) iterator.next();
+			deleteInfo = doDelete(uID);		
+			boolean thisDone = Boolean.parseBoolean(deleteInfo.get("ok"));
+			if (!thisDone) {
+				allDone = false;
+				continue;
+			}	
+		}
+		
+
+		msg.put("ok", String.valueOf(allDone));
+						
+		return msg;
+	}
+	
+	
+	
 	private static Map<String, String> doDelete(Long uID){	
 		List<Node> nodesToBeDeleted = getNodesToBeDeleted(uID);
 		List<Relationship> relToBeDeleted = getRelationshipsToBeDeleted(uID);
@@ -249,15 +295,16 @@ public class ModelDeleter {
 		} catch (Exception e){
 			logger.error(e.getMessage());
 			Map<String, String> msg = new HashMap<String, String>();
-			msg.put("Exception", e.getMessage());
+			msg.put("message", e.getMessage());
+			msg.put("ok", "false");
 			return msg;
 		}
 		
 		Map<String, String> msg = new HashMap<String, String>();
-		msg.put("successful", Boolean.TRUE.toString());
 		msg.put("uID", uID.toString());
 		msg.put("nodes deleted", nodeCount.toString());
 		msg.put("relations deleted", relCount.toString());
+		msg.put("ok", "true");
 		
 		return msg; 
 	}
