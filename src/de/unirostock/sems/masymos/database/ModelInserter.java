@@ -98,15 +98,14 @@ public class ModelInserter {
 		
 		if (enforceUniqueFileID) {
 			Node existingNode = null;
-			try {
-				existingNode = graphDB.findNode(NodeLabel.Types.DOCUMENT, General.FILEID, fileID);			
-			} catch (MultipleFoundException e) {
-				throw new MaSyMoSException(General.FILEID + ": " + fileID + " already exists at least 2 times! " + e.getMessage());
+			try ( Transaction tx = graphDB.beginTx() ) {
+				existingNode = graphDB.findNode(NodeLabel.Types.DOCUMENT, General.FILEID, fileID);
+				if (existingNode != null) throw new MaSyMoSException(General.FILEID + ": " + fileID + " already exists, UID: " + existingNode.getProperty(General.UID));
+				tx.success();
+			} catch (Exception e) {
+				throw new MaSyMoSException(General.FILEID + ": " + fileID + " already exists! " + e.getMessage());
 			}		
 			
-			if (existingNode != null) {
-				throw new MaSyMoSException(General.FILEID + ": " + fileID + " already exists, UID: " + existingNode.getProperty(General.UID));
-			}
 		}
 		
 		Long uID = IdFactory.instance().getID();
