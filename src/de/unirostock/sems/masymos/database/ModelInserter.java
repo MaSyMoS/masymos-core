@@ -8,6 +8,7 @@ import java.util.Map;
 
 import org.apache.commons.lang3.StringUtils;
 import org.neo4j.graphdb.GraphDatabaseService;
+import org.neo4j.graphdb.MultipleFoundException;
 import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Transaction;
 import org.neo4j.graphdb.index.Index;
@@ -16,8 +17,10 @@ import org.apache.log4j.Logger;
 import de.unirostock.sems.masymos.annotation.AnnotationResolverUtil;
 import de.unirostock.sems.masymos.configuration.NodeLabel;
 import de.unirostock.sems.masymos.configuration.Property;
+import de.unirostock.sems.masymos.configuration.Property.General;
 import de.unirostock.sems.masymos.configuration.Relation;
 import de.unirostock.sems.masymos.extractor.Extractor;
+import de.unirostock.sems.masymos.util.MaSyMoSException;
 
 /**
 *
@@ -91,7 +94,18 @@ public class ModelInserter {
 	}
 	
 	
-	public static Long addModel(String fileID, URL url, String modelType) {
+	public static Long addModel(String fileID, URL url, String modelType, boolean enforceUniqueFileID) throws MaSyMoSException {
+		
+		if (enforceUniqueFileID) {
+			Node existingNode = null;
+			try {
+				existingNode = graphDB.findNode(NodeLabel.Types.DOCUMENT, General.FILEID, fileID);
+				if (existingNode != null) throw new MaSyMoSException();
+			} catch (Exception e) {
+				throw new MaSyMoSException(General.FILEID + ": " + fileID + " already exists!");
+			}						
+		}
+		
 		Long uID = IdFactory.instance().getID();
 		modelType = StringUtils.upperCase(modelType);
 		
@@ -101,6 +115,7 @@ public class ModelInserter {
 		} catch (Exception e) {
 			logger.error(e.getMessage());
 			documentNode = null;
+			throw new MaSyMoSException(e.getMessage());
 		}
 		
 		try ( Transaction tx = graphDB.beginTx() ) {
@@ -119,7 +134,7 @@ public class ModelInserter {
 			tx.success();
 		} catch (Exception e) {
 			logger.error(e.getMessage());
-			return Long.MIN_VALUE;
+			throw new MaSyMoSException(e.getMessage());		
 		}
 		
 		return uID;
