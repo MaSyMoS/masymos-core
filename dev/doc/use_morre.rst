@@ -58,12 +58,29 @@ http://yourServer:7474/morre/model_update_service/
     - ``fileId`` a user defined name
     - ``url`` is an accessible location to load the model
     - ``modelType[SBML|CELLML|SEDML]`` defines the encoding, loading OWL is not provided in server mode
-    - this method returns a ``uID`` as result
+    - ``enforceUniqueFileId [true|false]`` OPTIONAL, default ``false``; if true, the fileId is checked for uniqueness
+    - return
+        - this method returns a ``uID`` as result
+        - ``ok [true|false]`` success, failure
+        - ``message`` on failure
 - ``delete_model/`` removes a model from the database, parameters:
     - ``uID`` generated during ``add_model/``
-    - ``fileID`` is optional and used to double-check
+    - ``fileId`` is optional and used to double-check
+    - ``versionId`` is optional and used to double-check
+    - return
+        - ``ok [true|false]`` success, failure
+        - ``message`` on failure
+- ``delete_model_by_fileid/`` removes a model from the database, parameters:
+    - ``fileId`` the start of the fileID
+    - this delete function is only useful if you use ``enforceUniqueFileId==true`` on insertion
+    - return
+        - ``ok [true|false]`` success, failure
+        - ``message`` on failure
 - ``create_annotation_index/`` by default no annotation index is generated in server mode when adding a model, parameters:
-    - ``dropExistingIndex true|false`` to decide if the annotation index should be deleted or updated
+    - ``dropExistingIndex [true|false]`` to decide if the annotation index should be deleted or updated
+    - return
+        - ``ok [true|false]`` success, failure
+        - ``message`` on failure
 
 Examples
 ########
