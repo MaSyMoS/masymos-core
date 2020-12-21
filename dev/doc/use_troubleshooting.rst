@@ -38,6 +38,10 @@ Problems with line breaks; bash scripts are not running
 
     - check out repositories without changes and only use editors, that preserve the Unix-line-breaks, like Notepad++, Atom, IntelliJ or Eclipse (you may need to configure it in some cases)
 
+.. Note:: Ways to deal with the differences
+
+    - if you've build the docker image with the 'wrong' line endings, make sure, to build it again using the ``rebuild`` parameter
+
 Solution
 --------
 

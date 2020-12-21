@@ -100,6 +100,7 @@ Server Integration
 .. WARNING:: by default the server is not secured at all
 
     - Authentication is disabled (run-parameter ``--env "NEO4J_AUTH=none"``)
+    - make sure to set your firewall rules to keep the server in you zone only
 
 .. image:: ../uml/structure_docker_morre.svg
 
@@ -114,6 +115,8 @@ The docker volume for the neo4j database is not removed automatically, use ``üè
 
 If you like to see the neo4j logs directly after starting the container, use this command:
     :c_bash:`./run-neo4j-server.sh && docker logs -f masymos_neo4j`
+
+The neo4j logs are written to the directory ``/logs`` in the container.
 
 .. _docker_using_own_volume:
 
