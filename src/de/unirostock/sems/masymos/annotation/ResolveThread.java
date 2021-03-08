@@ -3,7 +3,14 @@ package de.unirostock.sems.masymos.annotation;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 
-import uk.ac.ebi.miriam.lib.MiriamLink;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+
+import de.unirostock.sems.masymos.annotation.AnnotationResolverUtil;
+
+
+
 
 
 /**
@@ -26,35 +33,57 @@ public class ResolveThread extends Thread {
 
 	@Override
 	public void run() {
-		String[] res = {};
-		String originalURI = uri;
-		try {
-			MiriamLink link = AnnotationResolverUtil.instance().getMiriamLink();
+		String res = "";
+		
+		// type determination
+		String patternURI = "http://identifiers.org/(.*)/(.*)";
+		String patternURN = "urn:miriam:(pubmed|biomodels.sbo):(.*)";
+		
+		Pattern URI = Pattern.compile(patternURI);
+		Pattern URN = Pattern.compile(patternURN);
+		
+		Matcher matcherURI = URI.matcher(uri);
+		Matcher matcherURN = URN.matcher(uri);
+		
+		if(matcherURN.find()) {
 			
-			if (StringUtils.startsWith(uri, "http")) {
-				uri = link.convertURL(uri);
-				logger.info("Miriam request #" + number + " Identifier.org URL " + originalURI + " mapped to Miriam URN " + uri);
+			if(matcherURN.group(1).equals("pubmed")) {
+				res = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id="+matcherURN.group(2)+"&rettype=fasta&retmode=xml";
+			}else {
+				res = "https://www.ebi.ac.uk/ols/api/ontologies/sbo/terms?short_form="+matcherURN.group(2).replace(':', '_');
 			}
-			if (StringUtils.isBlank(uri)) {
-				uri = link.getMiriamURI(originalURI);
-				logger.warn("Miriam request #" + number + " Retrieving equivalent for invalid " + originalURI +" --> " + uri);
+		}else if(matcherURI.find()){
+			
+			if(matcherURI.group(1).equals("go")||matcherURI.group(1).equals("obo.go")){
+				res = "https://www.ebi.ac.uk/ols/api/ontologies/go/terms?short_form="+matcherURI.group(2).replace(':', '_');
+			}else if(matcherURI.group(1).equals("chebi")) {
+				res = "https://www.ebi.ac.uk/ols/api/ontologies/chebi/terms?short_form="+matcherURI.group(2).replace(':', '_');
+			}else if(matcherURI.group(1).equals("bto")) {
+				res = "https://www.ebi.ac.uk/ols/api/ontologies/bto/terms?short_form="+matcherURI.group(2).replace(':', '_');
+			}else if(matcherURI.group(1).equals("uniprot")) {
+				res = "https://www.uniprot.org/uniprot/"+matcherURI.group(2)+".xml";
+			}else if(matcherURI.group(1).equals("pubmed")) {
+				res = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id="+matcherURI.group(2)+"&rettype=fasta&retmode=xml";
+			}else if(matcherURI.group(1).equals("interpro")) {
+				res = "https://www.ebi.ac.uk/interpro/api/entry/interpro/"+matcherURI.group(2)+"/?format=json";
+			}else if(matcherURI.group(1).equals("reactome")) {
+				res = "https://reactome.org/ContentService/data/query/"+matcherURI.group(2);
+			}else if(matcherURI.group(1).equals("sgd")) {
+				res = "https://www.yeastgenome.org/backend/locus/"+matcherURI.group(2);
+			}else {
+				res = uri;
 			}
-			res = link.getLocations(uri); 
-		} catch (Exception e1) {
-			logger.error("Error using Miriam library"+e1.getMessage(),e1);
-		}
-		if ((res == null) || (res.length == 0)) {
-			logger.info("Miriam request #" + number +" returned no results for " + uri);
-			return;
-		}
-		logger.info("Miriam request #" + number +" returned " + res.length + " results for " + uri);
-		
-		for (int i = 0; i < res.length; i++) {
-			//TODO this oldURI is a hack until Identifiers.org provides a proper interface
-			AnnotationResolverUtil.instance().addToUrlThreadPool(originalURI, res[i]);
+		}else{
+			res = uri;
 		}
 		
-		logger.info("Miriam request #" + number +" finished");
+		if (! uri.equals(res)) {
+			logger.info("Request #" + number + " Identifier.org URL " + uri + " mapped to " + res);
+		}
+		
+		//TODO this oldURI is a hack until Identifiers.org provides a proper interface
+		AnnotationResolverUtil.instance().addToUrlThreadPool(uri, res);
+		logger.info("Resolution request #" + number +" finished");
 
 	}
 

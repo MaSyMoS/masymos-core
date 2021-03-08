@@ -4,10 +4,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
+import java.net.HttpURLConnection;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.NoSuchElementException;
 
 import org.apache.commons.io.IOUtils;
@@ -60,23 +61,58 @@ public class FetchThread extends Thread {
 		InputStream stream = null;
 
 		try {
-			URL connection = new URL(url);
+			
+			URL connection, base, next;
+			HttpURLConnection urlCon;
+			String location;
+			int times;
+			HashMap<String,Integer> visited = new HashMap<>();
+			
+			
+			while(true) {
 
-			URLConnection urlCon = connection.openConnection();
-			// set some timeouts
-			urlCon.setConnectTimeout(timeout);
-			urlCon.setReadTimeout(timeout);
-
+				connection = new URL(url);
+				urlCon = (HttpURLConnection) connection.openConnection();
+				
+				urlCon.setConnectTimeout(timeout);
+				urlCon.setReadTimeout(timeout);
+				
+				urlCon.setInstanceFollowRedirects(false);
+				
+				// avoid redirecting-loop
+				times = visited.compute(url, (key, count) -> count == null ? 1 : count + 1);
+			    if (times > 3) {
+			    	logger.info("Thread #" + number + ": Stuck in redirection loop. (Original URI: "+uri+")");
+			    	break;
+			    }
+				
+				if (urlCon.getResponseCode() == 301 || urlCon.getResponseCode() == 302){
+					location = urlCon.getHeaderField("Location");
+					base = new URL(url);
+					next = new URL(base,location);
+					url = next.toExternalForm();
+					continue; 
+				}else if (urlCon.getResponseCode() != 200) {
+					location = uri;
+					base = new URL(url);
+					next = new URL(base,location);
+					url = next.toExternalForm();
+					continue;
+				}
+				break;
+			}
+			
 			stream = urlCon.getInputStream();
 			text = IOUtils.toString(stream);
 			Document doc = Jsoup.parse(text);
 			text = doc.text();
+			
 		} catch (MalformedURLException mue) {
 			logger.info("Thread #" + number + ": Malformed URL: " + url);
 			// do nothing
 		} catch (IOException ioe) {
 			// do nothing
-			logger.info("Thread #" + number
+			logger.error("Thread #" + number
 					+ ": I/O error or timeout when reading URL: " + url);
 		} finally {
 			IOUtils.closeQuietly(stream);
@@ -111,9 +147,9 @@ public class FetchThread extends Thread {
 					+ " FAILED - multiple entries with same URI: " + uri);
 			logger.error(e.getMessage());
 		} finally {
-		
 			logger.info("Thread #" + number + ": " + url
 					+ " terminated at " + dateFormat.format(new Date()));
+					
 		}
 	}
 
