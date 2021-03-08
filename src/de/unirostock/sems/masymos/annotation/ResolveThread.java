@@ -45,7 +45,7 @@ public class ResolveThread extends Thread {
 		Matcher matcherURI = URI.matcher(uri);
 		Matcher matcherURN = URN.matcher(uri);
 		
-		if(matcherURN.find()) {
+		if(matcherURN.find()) { 
 			
 			if(matcherURN.group(1).equals("pubmed")) {
 				res = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id="+matcherURN.group(2)+"&rettype=fasta&retmode=xml";
