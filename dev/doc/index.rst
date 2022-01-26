@@ -8,6 +8,13 @@ Welcome to the MaSyMoS-Documentation!
 
 All data is represented as a Graph and can be queried using Cypher. A description of the underlying database is available from our latest publication in [Oxford DATABASE](http://www.ncbi.nlm.nih.gov/pubmed/25754863).
 
+.. WARNING:: OLD VERSION OF Log4j used
+
+    - this software is vulnarable to the Log4Shell-Bug
+    - `Issue exists here <https://github.com/MaSyMoS/masymos-core/issues/32>`__.
+    - do not run MaSyMoS on the public internet
+
+
 Source Code, Feedback and Contribution
 ######################################
 
